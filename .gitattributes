@@ -1,1 +1,2 @@
 "End to End Samples/**/snapshot.zip" filter=lfs diff=lfs merge=lfs -text
+evaluation/evidence/final20/** -text
