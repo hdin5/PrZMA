@@ -1,0 +1,64 @@
+{
+  "tool_plan": {
+    "tool": {
+      "name": "ChromeCacheView",
+      "version": "2.52"
+    },
+    "objective": "Generate Chrome cache entries through representative web browsing, then preserve the cache for ChromeCacheView listing and export.",
+    "required_actions": [
+      {
+        "name": "browser.launch",
+        "why": "Starts the Chromium session that creates the Chrome cache."
+      },
+      {
+        "name": "browser.goto",
+        "why": "Loads distinct web documents and populates cache records."
+      },
+      {
+        "name": "browser.get_clickables",
+        "why": "Observes available page controls before exercising visible effects."
+      },
+      {
+        "name": "browser.smart_type",
+        "why": "Creates search or form-request cache activity."
+      },
+      {
+        "name": "browser.click",
+        "why": "Commits observed links, buttons, and form effects."
+      },
+      {
+        "name": "browser.select_option",
+        "why": "Varies observed finite page parameters that can produce different cached responses."
+      },
+      {
+        "name": "browser.scroll",
+        "why": "Reveals lazy-loaded content and related cache requests."
+      },
+      {
+        "name": "browser.screenshot",
+        "why": "Preserves visible-state evidence corresponding to cached content."
+      },
+      {
+        "name": "browser.close",
+        "why": "Closes the browser to flush pending cache writes before collection."
+      }
+    ],
+    "forbidden_actions": [],
+    "required_artifacts": [
+      "chromium.cache.cache_data"
+    ],
+    "trigger_actions": [
+      "browser.close"
+    ],
+    "completion": {
+      "type": "required_artifacts_present",
+      "detail": "Complete only after the Chromium cache data is present following browser closure, indicating that browsing activity has generated and flushed cache entries for ChromeCacheView collection."
+    },
+    "action_intent_guidance": "Action Flow: Launch Chromium, then use run-provided runtime browsing targets when available to load a few relevant, content-rich pages that naturally request cacheable documents, media, scripts, and images. On each page, obtain visible clickables before interacting. Use visible search or form controls with smart_type, commit observed links or buttons with click, and change available finite parameters with select_option where present to request varied responses. Use a bounded observe -> scroll to reveal lazy content -> re-observe loop, then interact only with newly observed controls as appropriate. Capture screenshots of meaningful loaded states. Visit distinct available targets as needed, then close the browser to flush pending writes so chromium.cache.cache_data is preserved. Reason guidance: State the current page context and the concrete cache-producing effect, such as loading an image-rich page, submitting a visible search, selecting a visible filter, following an observed link, or scrolling to request lazy-loaded content; vary reasons to match the actual action and visible result.",
+    "_provenance": {
+      "model": "gpt-5.6-terra",
+      "notes": "3-stage TMI: IR -> bounded mapping -> tool_plan (leaf artifact keys only; with JSON repairs)",
+      "platform": "windows"
+    }
+  }
+}

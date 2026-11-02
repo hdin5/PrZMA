@@ -1,0 +1,68 @@
+{
+  "tool_plan": {
+    "tool": {
+      "name": "ChromeCacheView",
+      "version": "2.52"
+    },
+    "objective": "Generate and preserve representative Chrome HTTP cache activity for ChromeCacheView to read, view metadata for, and export or extract cached files.",
+    "required_actions": [
+      {
+        "name": "browser.launch",
+        "why": "Starts a Chromium session whose cache can be populated."
+      },
+      {
+        "name": "browser.goto",
+        "why": "Loads distinct web documents and their cacheable resources."
+      },
+      {
+        "name": "browser.get_clickables",
+        "why": "Observes available controls before exercising page interactions."
+      },
+      {
+        "name": "browser.smart_type",
+        "why": "Creates search or form-request cache activity when a suitable input is visible."
+      },
+      {
+        "name": "browser.smart_click",
+        "why": "Exercises visible links or controls that can load additional cacheable content."
+      },
+      {
+        "name": "browser.click",
+        "why": "Commits an observed specific control action when precise interaction is needed."
+      },
+      {
+        "name": "browser.select_option",
+        "why": "Varies an observed finite page parameter that can produce distinct cached responses."
+      },
+      {
+        "name": "browser.scroll",
+        "why": "Reveals lazy-loaded content and related cacheable resources."
+      },
+      {
+        "name": "browser.screenshot",
+        "why": "Preserves visible content context for correlation with cached entries."
+      },
+      {
+        "name": "browser.close",
+        "why": "Closes the session so pending browser cache state is flushed for collection."
+      }
+    ],
+    "forbidden_actions": [],
+    "required_artifacts": [
+      "chromium.cache.cache_data"
+    ],
+    "trigger_actions": [
+      "browser.close"
+    ],
+    "completion": {
+      "type": "min_required_actions",
+      "detail": "Complete after the Chromium session has been launched, relevant runtime-provided pages have been visited and visibly interacted with as available, visible context has been captured, and browser.close has been performed to flush the cache."
+    },
+    "action_intent_guidance": "Action Flow: Launch Chromium, then use browser.goto with relevant run-provided runtime resources when available. Load a few distinct pages that naturally return cacheable documents and visible assets. On each page, use browser.get_clickables to inspect visible controls. Where suitable visible inputs, links, buttons, or finite options are present, use browser.smart_type, browser.smart_click, browser.click, and browser.select_option to request additional page states and resources. Use browser.scroll to reveal lazy-loaded visible content; after revealing content, re-run browser.get_clickables before further interaction. This bounded observe -> reveal -> re-observe loop helps generate varied HTTP cache entries without exhaustive traversal. Take browser.screenshot to preserve the visible page context associated with loaded resources. Close the browser only after activity is complete so cache state is flushed, producing chromium.cache.cache_data. Reason guidance: Write context-specific reasons that identify the current visible page state and expected cache effect, such as loading an asset-rich page to populate cache entries, scrolling to request lazy-loaded resources, selecting a visible",
+    "_provenance": {
+      "model": "gpt-5.6-terra",
+      "notes": "3-stage TMI: IR -> bounded mapping -> tool_plan (leaf artifact keys only; with JSON repairs)",
+      "platform": "windows"
+    }
+  }
+}

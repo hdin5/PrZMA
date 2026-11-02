@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "created_at": "2026-07-19T05:20:03.9112934Z",
+  "framework_fingerprint": "e1d7ab3b6984952e79d6b44497b4f7ae96267bdf3e00cfe797a860202d7866d5",
+  "selection_rule": "Use the first five valid live runs from the quota-interrupted Campaign batch followed by the first fifteen valid live runs from the resumed frozen Campaign batch, in occurrence order and without regard to coverage outcomes.",
+  "included_run_ids": [
+    "campaign_20260719T033826Z_01",
+    "campaign_20260719T033826Z_02",
+    "campaign_20260719T033826Z_03",
+    "campaign_20260719T033826Z_04",
+    "campaign_20260719T033826Z_05",
+    "campaign_20260719T041323Z_01",
+    "campaign_20260719T041323Z_02",
+    "campaign_20260719T041323Z_03",
+    "campaign_20260719T041323Z_04",
+    "campaign_20260719T041323Z_05",
+    "campaign_20260719T041323Z_06",
+    "campaign_20260719T041323Z_07",
+    "campaign_20260719T041323Z_08",
+    "campaign_20260719T041323Z_09",
+    "campaign_20260719T041323Z_10",
+    "campaign_20260719T041323Z_11",
+    "campaign_20260719T041323Z_12",
+    "campaign_20260719T041323Z_13",
+    "campaign_20260719T041323Z_14",
+    "campaign_20260719T041323Z_15"
+  ],
+  "excluded_attempts": [
+    {
+      "run_id": "campaign_20260719T033826Z_06",
+      "classification": "infrastructure_failure",
+      "code": "provider_insufficient_quota",
+      "stage": "agent_step"
+    },
+    {
+      "run_id": "campaign_20260719T033826Z_07",
+      "classification": "infrastructure_failure",
+      "code": "provider_insufficient_quota",
+      "stage": "tmi_ir"
+    },
+    {
+      "run_id": "campaign_20260719T041323Z_16",
+      "classification": "not_a_measured_run",
+      "code": "manual_stop_after_target_reached",
+      "stage": "tmi_ir"
+    }
+  ],
+  "action_replay_selection": {
+    "control_selection_seed": "e1d7ab3b6984952e79d6b44497b4f7ae96267bdf3e00cfe797a860202d7866d5",
+    "selection_method": "Python random.Random seeded with the frozen framework fingerprint; sample without replacement from complete family-and-behavior runs.",
+    "diagnostic_failure_run_id": "campaign_20260719T041323Z_06",
+    "control_run_ids": [
+      "campaign_20260719T041323Z_02",
+      "campaign_20260719T041323Z_13",
+      "campaign_20260719T041323Z_14"
+    ],
+    "excluded_from_campaign_metrics": true
+  }
+}

@@ -1,0 +1,17 @@
+.env
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.log
+!End to End Samples/**/*.log
+!evaluation/evidence/**/*.log
+runs/
+interpreter_out/
+evaluation/local/
+evaluation/results/
+Snapshot_Engine/rules.json
+Snapshot_Engine/vm_endpoints.json
+.DS_Store
+Thumbs.db

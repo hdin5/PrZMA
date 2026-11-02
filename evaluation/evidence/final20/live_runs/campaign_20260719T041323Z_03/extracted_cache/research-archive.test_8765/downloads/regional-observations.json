@@ -1,0 +1,59 @@
+{
+  "dataset": "Regional Observation Series",
+  "records": [
+    {
+      "date": "2026-03-12",
+      "record_id": "RA-OBS-001",
+      "region": "north-coast",
+      "salinity_psu": 31.4,
+      "temperature_c": 12.8,
+      "turbidity_ntu": 4.2
+    },
+    {
+      "date": "2026-03-12",
+      "record_id": "RA-OBS-002",
+      "region": "estuary",
+      "salinity_psu": 18.7,
+      "temperature_c": 13.6,
+      "turbidity_ntu": 12.5
+    },
+    {
+      "date": "2026-03-12",
+      "record_id": "RA-OBS-003",
+      "region": "harbor",
+      "salinity_psu": 27.2,
+      "temperature_c": 14.1,
+      "turbidity_ntu": 8.8
+    },
+    {
+      "date": "2026-04-18",
+      "record_id": "RA-OBS-004",
+      "region": "north-coast",
+      "salinity_psu": 32.0,
+      "temperature_c": 14.7,
+      "turbidity_ntu": 3.9
+    },
+    {
+      "date": "2026-04-18",
+      "record_id": "RA-OBS-005",
+      "region": "estuary",
+      "salinity_psu": 19.4,
+      "temperature_c": 15.3,
+      "turbidity_ntu": 11.2
+    },
+    {
+      "date": "2026-04-18",
+      "record_id": "RA-OBS-006",
+      "region": "harbor",
+      "salinity_psu": 28.1,
+      "temperature_c": 15.8,
+      "turbidity_ntu": 7.6
+    }
+  ],
+  "schema_version": 1,
+  "units": {
+    "salinity_psu": "practical salinity units",
+    "temperature_c": "degrees Celsius",
+    "turbidity_ntu": "nephelometric turbidity units"
+  }
+}

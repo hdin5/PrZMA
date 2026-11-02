@@ -1,0 +1,156 @@
+{
+    "ok":  true,
+    "run_id":  "campaign_20260719T041323Z_04",
+    "snapshot_id":  "snap_5c3d4de56144455182df7ee5d1ef748c",
+    "agent_id":  "A1",
+    "manifest":  {
+                     "schema_version":  "1.0.0",
+                     "run_id":  "campaign_20260719T041323Z_04",
+                     "snapshot_id":  "snap_5c3d4de56144455182df7ee5d1ef748c",
+                     "agent_id":  "A1",
+                     "created_at":  "2026-07-19T04:27:49.268177+00:00",
+                     "trigger":  {
+                                     "schema_version":  "1.0.0",
+                                     "type":  "event",
+                                     "reason":  "event:browser.close",
+                                     "action_id":  null,
+                                     "action_name":  "browser.close",
+                                     "agent_id":  "A1",
+                                     "scheduled_at":  null,
+                                     "meta":  {
+                                                  "rules_path":  "evaluation/evidence/final20/live_runs/campaign_20260719T041323Z_04/tmi/tmi_rules.json",
+                                                  "catalog_path":  "Snapshot_Engine/artifact_catalog.json"
+                                              }
+                                 },
+                     "layers":  [
+
+                                ],
+                     "files":  [
+
+                               ],
+                     "artifacts":  [
+                                       {
+                                           "schema_version":  "1.0.0",
+                                           "layer":  "browser_artifacts",
+                                           "source_path":  "runtime_profiles/campaign_20260719T041323Z/campaign_20260719T041323Z_04/Default/Cache/Cache_Data/data_0",
+                                           "stored_path":  "artifacts/browser_artifacts/chromium.cache.cache_data/data_0",
+                                           "size":  45056,
+                                           "sha256":  "19f96b517c7b1a005a41ded6b31c59ebd70b7d4208912d563ebd76e44585ef77",
+                                           "meta":  {
+                                                        "artifact_key":  "chromium.cache.cache_data"
+                                                    }
+                                       },
+                                       {
+                                           "schema_version":  "1.0.0",
+                                           "layer":  "browser_artifacts",
+                                           "source_path":  "runtime_profiles/campaign_20260719T041323Z/campaign_20260719T041323Z_04/Default/Cache/Cache_Data/data_1",
+                                           "stored_path":  "artifacts/browser_artifacts/chromium.cache.cache_data/data_1",
+                                           "size":  270336,
+                                           "sha256":  "b8dafba499418bf5b780f67bac3b61a73452a1c1746fb2256c93fec92d83c671",
+                                           "meta":  {
+                                                        "artifact_key":  "chromium.cache.cache_data"
+                                                    }
+                                       },
+                                       {
+                                           "schema_version":  "1.0.0",
+                                           "layer":  "browser_artifacts",
+                                           "source_path":  "runtime_profiles/campaign_20260719T041323Z/campaign_20260719T041323Z_04/Default/Cache/Cache_Data/data_2",
+                                           "stored_path":  "artifacts/browser_artifacts/chromium.cache.cache_data/data_2",
+                                           "size":  1056768,
+                                           "sha256":  "5556c2bfa97043dc9fe58c2f1e0e4e5230a3343a00649959d5c834666247f035",
+                                           "meta":  {
+                                                        "artifact_key":  "chromium.cache.cache_data"
+                                                    }
+                                       },
+                                       {
+                                           "schema_version":  "1.0.0",
+                                           "layer":  "browser_artifacts",
+                                           "source_path":  "runtime_profiles/campaign_20260719T041323Z/campaign_20260719T041323Z_04/Default/Cache/Cache_Data/data_3",
+                                           "stored_path":  "artifacts/browser_artifacts/chromium.cache.cache_data/data_3",
+                                           "size":  4202496,
+                                           "sha256":  "925341ab8b77057049f441eaba0f60892edc6da2a11f6807aeb01a74655ac37f",
+                                           "meta":  {
+                                                        "artifact_key":  "chromium.cache.cache_data"
+                                                    }
+                                       },
+                                       {
+                                           "schema_version":  "1.0.0",
+                                           "layer":  "browser_artifacts",
+                                           "source_path":  "runtime_profiles/campaign_20260719T041323Z/campaign_20260719T041323Z_04/Default/Cache/Cache_Data/f_000001",
+                                           "stored_path":  "artifacts/browser_artifacts/chromium.cache.cache_data/f_000001",
+                                           "size":  366276,
+                                           "sha256":  "2b3f299a3a9ed667112a6080524faf6ab0556e684b31ddebb13bad21cc1a8293",
+                                           "meta":  {
+                                                        "artifact_key":  "chromium.cache.cache_data"
+                                                    }
+                                       },
+                                       {
+                                           "schema_version":  "1.0.0",
+                                           "layer":  "browser_artifacts",
+                                           "source_path":  "runtime_profiles/campaign_20260719T041323Z/campaign_20260719T041323Z_04/Default/Cache/Cache_Data/f_000002",
+                                           "stored_path":  "artifacts/browser_artifacts/chromium.cache.cache_data/f_000002",
+                                           "size":  306724,
+                                           "sha256":  "7885cd7d64514814d14682f6f038f6e1fbd2af87e1d87831d37d5c8faf41fb95",
+                                           "meta":  {
+                                                        "artifact_key":  "chromium.cache.cache_data"
+                                                    }
+                                       },
+                                       {
+                                           "schema_version":  "1.0.0",
+                                           "layer":  "browser_artifacts",
+                                           "source_path":  "runtime_profiles/campaign_20260719T041323Z/campaign_20260719T041323Z_04/Default/Cache/Cache_Data/f_000003",
+                                           "stored_path":  "artifacts/browser_artifacts/chromium.cache.cache_data/f_000003",
+                                           "size":  2524048,
+                                           "sha256":  "1d01c418fcf478fd98e34466efd87bb02723c6d6c0fb4c6af88b8287ddfe297d",
+                                           "meta":  {
+                                                        "artifact_key":  "chromium.cache.cache_data"
+                                                    }
+                                       },
+                                       {
+                                           "schema_version":  "1.0.0",
+                                           "layer":  "browser_artifacts",
+                                           "source_path":  "runtime_profiles/campaign_20260719T041323Z/campaign_20260719T041323Z_04/Default/Cache/Cache_Data/f_000004",
+                                           "stored_path":  "artifacts/browser_artifacts/chromium.cache.cache_data/f_000004",
+                                           "size":  445361,
+                                           "sha256":  "ee82c9335db7d0943f0670df4a943cf73c5f376470ebd6298bdc194294562927",
+                                           "meta":  {
+                                                        "artifact_key":  "chromium.cache.cache_data"
+                                                    }
+                                       },
+                                       {
+                                           "schema_version":  "1.0.0",
+                                           "layer":  "browser_artifacts",
+                                           "source_path":  "runtime_profiles/campaign_20260719T041323Z/campaign_20260719T041323Z_04/Default/Cache/Cache_Data/f_000005",
+                                           "stored_path":  "artifacts/browser_artifacts/chromium.cache.cache_data/f_000005",
+                                           "size":  563167,
+                                           "sha256":  "96e9295bb4413fe2cfcc7b94a8d35103e987d74ee8e540f9de2b4c43bbd9246f",
+                                           "meta":  {
+                                                        "artifact_key":  "chromium.cache.cache_data"
+                                                    }
+                                       },
+                                       {
+                                           "schema_version":  "1.0.0",
+                                           "layer":  "browser_artifacts",
+                                           "source_path":  "runtime_profiles/campaign_20260719T041323Z/campaign_20260719T041323Z_04/Default/Cache/Cache_Data/index",
+                                           "stored_path":  "artifacts/browser_artifacts/chromium.cache.cache_data/index",
+                                           "size":  262512,
+                                           "sha256":  "d354a5c4bcbbe7a83ab5c2e1e8e132d24154fe19243bbd8c71068a229fe0a5cf",
+                                           "meta":  {
+                                                        "artifact_key":  "chromium.cache.cache_data"
+                                                    }
+                                       }
+                                   ],
+                     "summary":  {
+                                     "artifact_count":  10,
+                                     "total_bytes":  10042744,
+                                     "zip_sha256":  "69e3592bf513226a6ca6da445e028fcfe0426a870a16fd12eb796165964998d9"
+                                 },
+                     "environment":  {
+
+                                     },
+                     "repro":  {
+
+                               },
+                     "notes":  ""
+                 }
+}

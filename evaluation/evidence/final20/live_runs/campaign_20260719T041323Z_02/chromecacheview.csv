@@ -1,0 +1,35 @@
+URL,Content Type,File Size,Cache Name,Content Encoding,Server Response,Web Site,Frame
+https://www.google.com/async/folae?async=_fmt:pb&udm=50&client_locale=en-US&client_country=us,application/x-protobuffer,314,data_1  [9216],br,HTTP/1.1 200,https://google.com,https://google.com
+http://research-archive.test:8765,text/html,"4,495",data_3  [8192],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/static/css/base.css,text/css,"10,449",data_3  [24576],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/static/js/base.js,application/javascript,925,data_1  [12288],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/static/images/archive-identity.png,image/png,779,data_1  [13312],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/search?query=regional+observations,text/html,"3,408",data_2  [12288],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/static/css/search.css,text/css,"1,548",data_2  [16384],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/static/js/search.js,application/javascript,"2,046",data_2  [18432],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/api/search?query=regional+observations&topic=all&year=all&format=all&sort=relevance,application/json,838,data_1  [18432],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/collections/environmental-signals,text/html,"3,301",data_2  [20480],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/static/css/collections.css,text/css,"3,326",data_2  [24576],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/static/js/collections.js,application/javascript,"2,115",data_2  [28672],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/api/collections/environmental-signals,application/json,201,data_1  [22272],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/static/images/coastal-observation.webp,image/webp,"366,276",f_000001,identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/static/images/field-research.jpg,image/jpeg,"306,724",f_000002,identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/static/images/sensor-array.png,image/png,"2,524,048",f_000003,identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/embed/map,text/html,850,data_1  [25600],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/static/css/map.css,text/css,"2,416",data_2  [32768],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/static/js/map.js,application/javascript,883,data_1  [28672],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/api/map/observations,application/json,245,data_1  [29696],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/datasets/regional-observations,text/html,"3,085",data_2  [36864],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/static/css/dataset.css,text/css,"2,316",data_2  [40960],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/static/js/dataset.js,application/javascript,"1,406",data_2  [45056],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/api/datasets/regional-observations?region=north-coast&measure=temperature,application/json,308,data_1  [33280],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/downloads/regional-observations.csv,text/csv,335,data_1  [34816],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/downloads/regional-observations.json,application/json,"1,425",data_2  [47104],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/documents/methods-supplement.pdf,application/pdf,"3,994",data_2  [49152],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/reports/web-evidence,text/html,"2,484",data_2  [53248],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/static/css/report.css,text/css,"1,587",data_2  [57344],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/static/js/report.js,application/javascript,524,data_1  [39936],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/static/images/web-evidence-figure.jpg,image/jpeg,"445,361",f_000004,identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/documents/web-evidence.pdf,application/pdf,"563,167",f_000005,identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/collections,text/html,"2,094",data_2  [61440],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test
+http://research-archive.test:8765/map,text/html,"2,210",data_2  [65536],identity,HTTP/1.0 200 OK,http://research-archive.test,http://research-archive.test

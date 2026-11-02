@@ -1,0 +1,26 @@
+.dataset-hero { display: grid; grid-template-columns: 1fr 280px; gap: 4rem; align-items: center; padding: 5rem 7vw; color: white; background: #173a56; }
+.dataset-hero h1 { font-size: clamp(3rem,5.5vw,5.3rem); }
+.dataset-hero .lede { color: #c7d8e1; }
+.dataset-badges { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.4rem; }
+.dataset-badges span { padding: .4rem .65rem; border: 1px solid #607f92; border-radius: 999px; color: #c7d9e2; font-size: .65rem; }
+.data-stat { padding: 2rem; border-left: 2px solid var(--amber); background: rgba(255,255,255,.08); }
+.data-stat span, .data-stat strong, .data-stat small { display: block; }
+.data-stat span { color: #9eb9c5; font-size: .66rem; text-transform: uppercase; }
+.data-stat strong { margin: .3rem 0; font-family: Georgia,serif; font-size: 3rem; }
+.data-stat small { color: #c5d7df; }
+.dataset-layout { display: grid; grid-template-columns: 1fr 330px; gap: 2rem; padding: 5rem 7vw 6rem; }
+.preview-panel, .download-panel { padding: 1.6rem; border: 1px solid var(--line); border-radius: 12px; background: white; }
+.preview-controls { display: flex; flex-wrap: wrap; align-items: end; gap: 1rem; }
+.preview-controls label { display: grid; gap: .4rem; color: #627583; font-size: .7rem; font-weight: 760; }
+.preview-controls select { min-width: 170px; padding: .7rem; border: 1px solid #c7d3d8; border-radius: 6px; background: white; }
+.data-table { min-height: 260px; margin-top: 1.5rem; padding: 1rem; overflow: auto; border-radius: 9px; background: #f2f6f6; color: var(--muted); }
+.download-panel { align-self: start; }
+.download-panel h2 { color: var(--ink); font-size: 2rem; }
+.download-panel a { display: flex; justify-content: space-between; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--line); text-decoration: none; }
+.download-panel a:last-child { border-bottom: 0; }
+.download-panel span, .download-panel b, .download-panel small { display: block; }
+.download-panel b { color: #294a5b; font-size: .78rem; }
+.download-panel small { margin-top: .25rem; color: #758590; font-size: .65rem; }
+.download-panel strong { color: var(--teal); font-size: .7rem; }
+@media (max-width: 850px) { .dataset-hero, .dataset-layout { grid-template-columns: 1fr; } }
+@media (max-width: 640px) { .dataset-hero, .dataset-layout { padding-inline: 1.25rem; } }

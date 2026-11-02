@@ -1,0 +1,68 @@
+{
+  "tool_plan": {
+    "tool": {
+      "name": "ChromeCacheView",
+      "version": "2.52"
+    },
+    "objective": "Generate representative Chromium web-cache activity and preserve the Chrome cache data that ChromeCacheView can read, inspect, export, and extract.",
+    "required_actions": [
+      {
+        "name": "browser.launch",
+        "why": "Launch Chromium with a profile in which cache artifacts can be generated."
+      },
+      {
+        "name": "browser.goto",
+        "why": "Create document and network-resource cache entries through distinct page loads."
+      },
+      {
+        "name": "browser.get_clickables",
+        "why": "Observe visible links, controls, and finite options before exercising cache-relevant page behavior."
+      },
+      {
+        "name": "browser.smart_type",
+        "why": "Submit realistic search input that can produce distinct cached response content."
+      },
+      {
+        "name": "browser.smart_click",
+        "why": "Exercise visible page links or controls that load additional cached resources."
+      },
+      {
+        "name": "browser.click",
+        "why": "Commit an observed control when a specific visible interaction is needed."
+      },
+      {
+        "name": "browser.select_option",
+        "why": "Vary observed finite page parameters that may produce different cached responses."
+      },
+      {
+        "name": "browser.scroll",
+        "why": "Reveal lazy-loaded content and its associated network resources."
+      },
+      {
+        "name": "browser.screenshot",
+        "why": "Preserve a visible representation of content associated with generated cache activity."
+      },
+      {
+        "name": "browser.close",
+        "why": "Close the browser after activity to flush pending cache data to the profile."
+      }
+    ],
+    "forbidden_actions": [],
+    "required_artifacts": [
+      "chromium.cache.cache_data"
+    ],
+    "trigger_actions": [
+      "browser.close"
+    ],
+    "completion": {
+      "type": "required_artifacts_present",
+      "detail": "Complete only after Chromium has been closed to flush cache state and chromium.cache.cache_data is present in the browser profile."
+    },
+    "action_intent_guidance": "Action Flow: Launch Chromium using the test profile. Use browser.goto with relevant run-provided runtime resources when available, selecting pages that naturally load documents and embedded resources. On each page, use browser.get_clickables to observe currently visible links, controls, and finite options. Enter realistic visible search or filter text with browser.smart_type where an observed input supports it, then use browser.smart_click or browser.click on observed controls or links to load additional content. Use browser.select_option only for visible finite choices that vary returned page content. Scroll through dynamically populated or media-rich visible content; after each bounded reveal, re-run browser.get_clickables and interact with newly visible relevant controls when appropriate. Capture browser.screenshot for representative rendered content associated with the activity. Visit a few distinct runtime-provided pages or contexts, then browser.close to flush the generated document, image, script, stylesheet, media, and response cache entries into chromium.cache.cache_data. Reason guidance: Write context-specific reasons describing the current page and cache-producing effect",
+    "_provenance": {
+      "model": "gpt-5.6-terra",
+      "notes": "3-stage TMI: IR -> bounded mapping -> tool_plan (leaf artifact keys only; with JSON repairs)",
+      "platform": "windows"
+    }
+  }
+}

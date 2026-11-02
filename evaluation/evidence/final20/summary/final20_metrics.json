@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0.0",
+  "campaign_id": "final20_frozen_campaign",
+  "attempted_run_count": 20,
+  "valid_run_count": 20,
+  "valid_run_ids": [
+    "campaign_20260719T033826Z_01",
+    "campaign_20260719T033826Z_02",
+    "campaign_20260719T033826Z_03",
+    "campaign_20260719T033826Z_04",
+    "campaign_20260719T033826Z_05",
+    "campaign_20260719T041323Z_01",
+    "campaign_20260719T041323Z_02",
+    "campaign_20260719T041323Z_03",
+    "campaign_20260719T041323Z_04",
+    "campaign_20260719T041323Z_05",
+    "campaign_20260719T041323Z_06",
+    "campaign_20260719T041323Z_07",
+    "campaign_20260719T041323Z_08",
+    "campaign_20260719T041323Z_09",
+    "campaign_20260719T041323Z_10",
+    "campaign_20260719T041323Z_11",
+    "campaign_20260719T041323Z_12",
+    "campaign_20260719T041323Z_13",
+    "campaign_20260719T041323Z_14",
+    "campaign_20260719T041323Z_15"
+  ],
+  "invalid_runs": [],
+  "family_coverage": {
+    "mean": 0.9982758620689655,
+    "minimum": 0.9655172413793104,
+    "maximum": 1.0,
+    "matched_total": 579,
+    "target_total": 580
+  },
+  "recovery_recall": {
+    "mean": 1.0,
+    "minimum": 1.0,
+    "maximum": 1.0
+  },
+  "parsing_precision": {
+    "mean": 1.0,
+    "minimum": 1.0,
+    "maximum": 1.0
+  },
+  "behavior_coverage": {
+    "mean": 0.9966666666666667,
+    "minimum": 0.9333333333333333,
+    "maximum": 1.0,
+    "verified_total": 299,
+    "target_total": 300,
+    "pooled": 0.9966666666666667
+  },
+  "field_accuracy": {
+    "content_encoding": {
+      "mean": 1.0,
+      "minimum": 1.0,
+      "maximum": 1.0
+    },
+    "content_identity": {
+      "mean": 1.0,
+      "minimum": 1.0,
+      "maximum": 1.0
+    },
+    "media_type": {
+      "mean": 1.0,
+      "minimum": 1.0,
+      "maximum": 1.0
+    },
+    "server_status": {
+      "mean": 1.0,
+      "minimum": 1.0,
+      "maximum": 1.0
+    },
+    "size": {
+      "mean": 1.0,
+      "minimum": 1.0,
+      "maximum": 1.0
+    },
+    "url": {
+      "mean": 1.0,
+      "minimum": 1.0,
+      "maximum": 1.0
+    }
+  },
+  "actions": {
+    "executed": {
+      "mean": 46.8,
+      "minimum": 42.0,
+      "maximum": 53.0
+    },
+    "success_rate": {
+      "mean": 0.9850799107165669,
+      "minimum": 0.9767441860465116,
+      "maximum": 1.0
+    },
+    "distinct_action_types": [
+      "browser.click",
+      "browser.get_clickables",
+      "browser.goto",
+      "browser.screenshot",
+      "browser.scroll",
+      "browser.select_option",
+      "browser.smart_click",
+      "browser.smart_type"
+    ],
+    "parameter_variants": {
+      "mean": 26.15,
+      "minimum": 23.0,
+      "maximum": 30.0
+    },
+    "actions_after_last_new_target": {
+      "mean": 2.65,
+      "minimum": 0.0,
+      "maximum": 4.0
+    },
+    "duplicate_navigation_count": 0,
+    "longest_identical_signature_streak": 5,
+    "longest_identical_proposal_signature_streak": 5,
+    "longest_identical_executed_signature_streak": 1
+  },
+  "model_usage": {
+    "input_tokens": 6538362,
+    "output_tokens": 152236,
+    "total_tokens": 6690598,
+    "estimated_cost_usd": 18.3818595,
+    "mean_total_tokens": 334529.9,
+    "mean_estimated_cost_usd": 0.9190929750000001,
+    "token_reduction_from_baseline": 0.6509508782052653,
+    "cost_reduction_from_baseline": 0.632558031917642
+  },
+  "timing": {
+    "agent_execution_seconds": {
+      "mean": 192.7083,
+      "minimum": 162.528,
+      "maximum": 218.694
+    },
+    "end_to_end_seconds": {
+      "mean": 215.29065,
+      "minimum": 185.051,
+      "maximum": 242.985
+    }
+  },
+  "readiness_thresholds": {
+    "required_valid_runs": 20,
+    "mean_family_coverage": 0.98,
+    "minimum_family_coverage": 0.96,
+    "minimum_recovery_recall": 0.98,
+    "minimum_parsing_precision": 0.98,
+    "minimum_field_accuracy": 0.98,
+    "minimum_pooled_behavior_coverage": 0.9777777777777777,
+    "maximum_actions_after_last_new_target": 10,
+    "maximum_duplicate_navigation_count": 0,
+    "maximum_identical_executed_signature_streak": 2,
+    "baseline_mean_total_tokens": 958403.5,
+    "baseline_mean_estimated_cost_usd": 2.50132825,
+    "minimum_efficiency_reduction": 0.25
+  },
+  "readiness_checks": {
+    "run_count": true,
+    "mean_family_coverage": true,
+    "minimum_family_coverage": true,
+    "recovery_recall": true,
+    "parsing_precision": true,
+    "field_accuracy": true,
+    "pooled_behavior_coverage": true,
+    "autonomous_completion": true,
+    "no_max_action_stop": true,
+    "post_target_action_tail": true,
+    "duplicate_navigation": true,
+    "identical_executed_signature_streak": true,
+    "token_efficiency": true,
+    "cost_efficiency": true
+  },
+  "ready_for_freeze_review": true,
+  "selection_manifest": "final20_selection.json",
+  "framework_fingerprint": "e1d7ab3b6984952e79d6b44497b4f7ae96267bdf3e00cfe797a860202d7866d5",
+  "diagnostic_replays_excluded": true
+}

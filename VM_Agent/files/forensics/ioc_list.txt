@@ -1,0 +1,4 @@
+indicator,type,context
+example.org,domain,training placeholder
+192.0.2.10,ipv4,reserved documentation address
+0000000000000000000000000000000000000000000000000000000000000000,sha256,synthetic placeholder

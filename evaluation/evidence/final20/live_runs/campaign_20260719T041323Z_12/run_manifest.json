@@ -1,0 +1,323 @@
+{
+  "run_id": "campaign_20260719T041323Z_12",
+  "evaluation_mode": "autonomous_cache_recovery",
+  "web_origin": "http://research-archive.test:8765",
+  "site_status": {
+    "effect_count": 0,
+    "request_count": 33,
+    "requested_resource_ids": [
+      "discover.css.01",
+      "discover.css.02",
+      "discover.html.01",
+      "discover.html.02",
+      "discover.html.03",
+      "discover.html.04",
+      "discover.jpeg.01",
+      "discover.js.01",
+      "discover.js.02",
+      "discover.json.01",
+      "discover.json.02",
+      "discover.png.01",
+      "discover.webp.01",
+      "inquiry.css.01",
+      "inquiry.html.01",
+      "inquiry.js.01",
+      "inquiry.json.01",
+      "passive.base_css",
+      "passive.base_js",
+      "passive.home_html",
+      "passive.identity_png",
+      "retrieve.css.01",
+      "retrieve.css.02",
+      "retrieve.csv.01",
+      "retrieve.html.01",
+      "retrieve.html.02",
+      "retrieve.jpeg.01",
+      "retrieve.js.01",
+      "retrieve.js.02",
+      "retrieve.json.01",
+      "retrieve.json.02",
+      "retrieve.pdf.01",
+      "retrieve.pdf.02"
+    ],
+    "run_id": "campaign_20260719T041323Z_12"
+  },
+  "action_metrics": {
+    "schema_version": "1.0.0",
+    "required_actions": [
+      "browser.close",
+      "browser.get_clickables",
+      "browser.goto",
+      "browser.launch",
+      "browser.screenshot",
+      "browser.scroll",
+      "browser.select_option",
+      "browser.smart_click",
+      "browser.smart_type"
+    ],
+    "successful_required_actions": [
+      "browser.close",
+      "browser.get_clickables",
+      "browser.goto",
+      "browser.launch",
+      "browser.screenshot",
+      "browser.scroll",
+      "browser.select_option",
+      "browser.smart_click",
+      "browser.smart_type"
+    ],
+    "required_action_coverage": 1.0,
+    "action_event_count": 50,
+    "action_success_rate": 0.98,
+    "vm_execution_count": 50,
+    "vm_execution_success_rate": 0.98,
+    "proposed_action_count": 48,
+    "rejected_action_count": 0,
+    "rejected_action_rate": 0.0,
+    "internal_event_count": 0,
+    "unexpected_action_count": 0,
+    "unexpected_action_rate": 0.0,
+    "forbidden_action_violations": 0,
+    "sequence_conformant": true,
+    "origins": {
+      "agent": 48,
+      "system_bootstrap": 1,
+      "system_cleanup": 1
+    },
+    "proposal_origins": {
+      "agent": 48
+    },
+    "by_type": {
+      "browser.click": {
+        "proposed": 11,
+        "rejected": 0,
+        "events": 11,
+        "successful": 10
+      },
+      "browser.close": {
+        "events": 1,
+        "successful": 1
+      },
+      "browser.get_clickables": {
+        "proposed": 17,
+        "rejected": 0,
+        "events": 17,
+        "successful": 17
+      },
+      "browser.goto": {
+        "proposed": 5,
+        "rejected": 0,
+        "events": 5,
+        "successful": 5
+      },
+      "browser.launch": {
+        "events": 1,
+        "successful": 1
+      },
+      "browser.screenshot": {
+        "proposed": 1,
+        "rejected": 0,
+        "events": 1,
+        "successful": 1
+      },
+      "browser.scroll": {
+        "proposed": 10,
+        "rejected": 0,
+        "events": 10,
+        "successful": 10
+      },
+      "browser.select_option": {
+        "proposed": 2,
+        "rejected": 0,
+        "events": 2,
+        "successful": 2
+      },
+      "browser.smart_click": {
+        "proposed": 1,
+        "rejected": 0,
+        "events": 1,
+        "successful": 1
+      },
+      "browser.smart_type": {
+        "proposed": 1,
+        "rejected": 0,
+        "events": 1,
+        "successful": 1
+      }
+    },
+    "autonomous_proposed_action_count": 48,
+    "autonomous_executed_action_count": 48,
+    "autonomous_action_success_rate": 0.9791666666666666,
+    "system_execution_count": 2,
+    "validation_intervention_count": 0,
+    "validation_intervention_rate": 0.0,
+    "distinct_autonomous_action_types": [
+      "browser.click",
+      "browser.get_clickables",
+      "browser.goto",
+      "browser.screenshot",
+      "browser.scroll",
+      "browser.select_option",
+      "browser.smart_click",
+      "browser.smart_type"
+    ],
+    "distinct_proposed_parameter_variants": 26,
+    "capability_provenance": {
+      "tmi_required": {
+        "proposed": 37,
+        "executed": 37,
+        "action_types": [
+          "browser.get_clickables",
+          "browser.goto",
+          "browser.screenshot",
+          "browser.scroll",
+          "browser.select_option",
+          "browser.smart_click",
+          "browser.smart_type"
+        ]
+      },
+      "framework_support": {
+        "proposed": 11,
+        "executed": 11,
+        "action_types": [
+          "browser.click"
+        ]
+      },
+      "system_bootstrap": {
+        "proposed": 0,
+        "executed": 1,
+        "action_types": [
+          "browser.launch"
+        ]
+      },
+      "system_cleanup": {
+        "proposed": 0,
+        "executed": 1,
+        "action_types": [
+          "browser.close"
+        ]
+      }
+    },
+    "covered_semantic_effect_keys": [
+      "content_open:observation",
+      "content_open:report",
+      "document_navigation:collections",
+      "document_navigation:collections:index",
+      "document_navigation:datasets",
+      "document_navigation:map:index",
+      "document_navigation:reports",
+      "document_navigation:root",
+      "dynamic_request:collection",
+      "dynamic_request:preview",
+      "file_acquisition:csv",
+      "file_acquisition:json",
+      "file_acquisition:pdf",
+      "form_commit:filters",
+      "form_commit:search"
+    ],
+    "covered_semantic_effect_count": 15,
+    "executions_per_effect": 3.2,
+    "equivalent_repeat_count": 0,
+    "first_seen_interactive_target_count": 29,
+    "last_new_interactive_target_at": "2026-07-19T04:56:53.162649+00:00",
+    "actions_after_last_new_target": 3,
+    "duplicate_navigation_count": 0,
+    "longest_identical_signature_streak": 1,
+    "longest_identical_proposal_signature_streak": 1,
+    "longest_identical_executed_signature_streak": 1
+  },
+  "agent_summary": {
+    "schema_version": "1.0.0",
+    "run_id": "campaign_20260719T041323Z_12",
+    "finished_at": "2026-07-19T04:57:07.622514+00:00",
+    "purpose": "tool_testing",
+    "actions_total": 48,
+    "max_actions_total": 100,
+    "minutes_elapsed": 2,
+    "max_minutes": 30,
+    "agent_done": {
+      "A1": true
+    },
+    "agent_completed": {
+      "A1": true
+    },
+    "agent_failures": {},
+    "evaluation_mode": "autonomous_cache_recovery",
+    "autonomous_action_count": 48,
+    "autonomous_completion": true,
+    "stop_reason": "all_agents_done"
+  },
+  "model_usage": {
+    "call_count": 52,
+    "successful_call_count": 52,
+    "failed_call_count": 0,
+    "input_tokens": 324124,
+    "output_tokens": 7049,
+    "total_tokens": 331173,
+    "cached_input_tokens": 5384,
+    "reasoning_tokens": 1709,
+    "latency_ms": 134267.392,
+    "estimated_cost_usd": 0.903931,
+    "unpriced_successful_call_count": 0,
+    "calls_by_stage": {
+      "agent_step": 49,
+      "tmi_ir": 1,
+      "tmi_mapping": 1,
+      "tmi_tool_plan": 1
+    },
+    "price_table_versions": [
+      "openai-api-standard-2026-07-18"
+    ]
+  },
+  "timing": {
+    "end_to_end_started_at": "2026-07-19T04:53:39.550097+00:00",
+    "agent_started_at": "2026-07-19T04:53:56.992463+00:00",
+    "agent_finished_at": "2026-07-19T04:57:12.047895+00:00",
+    "finished_at": "2026-07-19T04:57:12.434971+00:00",
+    "agent_execution_seconds": 195.055,
+    "end_to_end_seconds": 212.885
+  },
+  "comparison": {
+    "interactive_target_count": 29,
+    "passive_target_count": 4,
+    "generated_interactive_count": 29,
+    "recovered_interactive_count": 29,
+    "e2e_matched_interactive_count": 29,
+    "autonomous_e2e_artifact_coverage": 1.0,
+    "generation_coverage": 1.0,
+    "recovery_recall": 1.0,
+    "runtime_generated_interactive_instance_count": 29,
+    "runtime_recovered_interactive_instance_count": 29,
+    "runtime_e2e_matched_interactive_instance_count": 29,
+    "canonical_interactive_variant_count": 33,
+    "canonical_e2e_matched_variant_count": 26,
+    "canonical_variant_coverage": 0.7878787878787878,
+    "distinct_runtime_parameter_variants": 3,
+    "behavior_count": 15,
+    "verified_behavior_count": 15,
+    "behavior_coverage": 1.0,
+    "parsing_precision": 1.0,
+    "target_domain_record_count": 33,
+    "matched_target_domain_record_count": 33,
+    "snapshot_present": true,
+    "field_accuracy_denominator": 29,
+    "field_accuracy": {
+      "url": 1.0,
+      "media_type": 1.0,
+      "size": 1.0,
+      "content_encoding": 1.0,
+      "server_status": 1.0,
+      "content_identity": 1.0
+    },
+    "size_semantics": {
+      "identity": "decoded",
+      "gzip": "encoded",
+      "deflate": "encoded"
+    },
+    "content_semantics": {
+      "identity": "decoded",
+      "gzip": "decoded",
+      "deflate": "encoded"
+    }
+  }
+}

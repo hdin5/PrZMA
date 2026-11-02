@@ -1,0 +1,16 @@
+.search-header { padding: 4rem 7vw; color: white; background: #173a56; }
+.search-header h1 { font-size: clamp(2.8rem,5vw,4.8rem); }
+.search-workspace { display: grid; grid-template-columns: 250px 1fr; gap: 3rem; padding: 4rem 7vw 6rem; }
+.search-workspace aside { align-self: start; padding: 1.4rem; border: 1px solid var(--line); border-radius: 12px; background: white; }
+.search-workspace aside h2 { color: var(--ink); font-size: 1.35rem; }
+.search-workspace label { display: grid; gap: .4rem; margin: 1rem 0; color: #566b7a; font-size: .72rem; font-weight: 760; }
+.search-workspace select { width: 100%; padding: .68rem; border: 1px solid #c9d5da; border-radius: 6px; color: #2d4c5d; background: white; }
+.search-workspace .quiet-button { width: 100%; }
+.results-heading { display: flex; justify-content: space-between; align-items: end; padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
+.results-heading h2 { margin: 0; color: var(--ink); font-size: 2.1rem; }
+.results-heading span { color: var(--muted); font-size: .73rem; }
+.result-card { display: block; padding: 1.6rem 0; border-bottom: 1px solid var(--line); text-decoration: none; }
+.result-card h3 { margin: .4rem 0; color: #21495c; font-size: 1.35rem; }
+.result-card p { margin: 0; color: var(--muted); }
+.result-type { color: #60828f; font-size: .65rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+@media (max-width: 760px) { .search-workspace { grid-template-columns: 1fr; padding-inline: 1.25rem; } .search-header { padding-inline: 1.25rem; } }

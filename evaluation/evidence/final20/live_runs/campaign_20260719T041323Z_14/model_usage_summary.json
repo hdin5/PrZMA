@@ -1,0 +1,23 @@
+{
+  "call_count": 51,
+  "successful_call_count": 51,
+  "failed_call_count": 0,
+  "input_tokens": 302851,
+  "output_tokens": 7504,
+  "total_tokens": 310355,
+  "cached_input_tokens": 5384,
+  "reasoning_tokens": 2051,
+  "latency_ms": 135535.102,
+  "estimated_cost_usd": 0.8575735,
+  "unpriced_successful_call_count": 0,
+  "calls_by_stage": {
+    "agent_step": 47,
+    "repair": 1,
+    "tmi_ir": 1,
+    "tmi_mapping": 1,
+    "tmi_tool_plan": 1
+  },
+  "price_table_versions": [
+    "openai-api-standard-2026-07-18"
+  ]
+}

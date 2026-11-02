@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "description": "Public synthetic forensic-demo upload catalog. Deploy these files below VM_Agent/files on each prepared VM.",
+  "base_path_vm": "C:\\Users\\VM Agent\\VM_Agent\\files",
+  "files": [
+    {
+      "id": "triage_notes_txt",
+      "path": "forensics/triage_notes.txt",
+      "name": "triage_notes.txt",
+      "description": "Short triage notes for the Discord investigation (safe demo content).",
+      "scenario_hint": "education, forensics_triage, share_notes",
+      "mime": "text/plain"
+    },
+    {
+      "id": "ioc_list_txt",
+      "path": "forensics/ioc_list.txt",
+      "name": "ioc_list.txt",
+      "description": "Demo IOC list (domains, URLs, hashes) for sharing in chat (safe placeholders).",
+      "scenario_hint": "education, forensics_triage, ioc_share",
+      "mime": "text/plain"
+    },
+    {
+      "id": "timeline_csv",
+      "path": "forensics/timeline.csv",
+      "name": "timeline.csv",
+      "description": "Small timeline CSV for the case (timestamps + event descriptions).",
+      "scenario_hint": "education, forensics_triage, timeline_share",
+      "mime": "text/csv"
+    },
+    {
+      "id": "cache_path_cheatsheet_md",
+      "path": "forensics/cache_path_cheatsheet.md",
+      "name": "cache_path_cheatsheet.md",
+      "description": "Cheatsheet of relevant browser artifact paths and what to extract (demo).",
+      "scenario_hint": "education, forensics_triage, reference_share",
+      "mime": "text/markdown"
+    }
+  ]
+}

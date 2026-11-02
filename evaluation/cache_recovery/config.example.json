@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "vm": {
+    "vmrun_path": "C:\\Program Files (x86)\\VMware\\VMware Workstation\\vmrun.exe",
+    "agent_vmx": "C:\\path\\to\\Agent1.vmx",
+    "gui": true,
+    "vm_password_env": "VM_PASSWORD",
+    "guest_username": "VM Agent",
+    "guest_password_env": "VM_GUEST_PASSWORD",
+    "guest_agent_root": "C:\\Users\\VM Agent\\VM_Agent",
+    "deploy_on_pilot": true,
+    "discovery_subnet": "192.168.0.0/24",
+    "rpyc_port": 18861,
+    "wait_timeout_sec": 240
+  },
+  "site": {
+    "bind_host": "0.0.0.0",
+    "host_vmnet_ip": "192.168.0.1",
+    "port": 8765,
+    "control_port": 8766,
+    "max_actions_total": 100,
+    "max_minutes": 30,
+    "max_validation_repairs": 5
+  },
+  "tool": {
+    "exe_path": "evaluation/local/tools/ChromeCacheView.exe",
+    "manual_url": "https://www.nirsoft.net/utils/chrome_cache_view.html",
+    "version": "2.52",
+    "sha256": "PIN_THE_DOWNLOADED_EXECUTABLE_SHA256",
+    "size_semantics": {
+      "identity": "decoded",
+      "gzip": "encoded",
+      "deflate": "encoded"
+    },
+    "content_semantics": {
+      "identity": "decoded",
+      "gzip": "decoded",
+      "deflate": "encoded"
+    }
+  },
+  "runtime": {
+    "model": "gpt-5.6-terra",
+    "reasoning_effort": "medium"
+  },
+  "readiness": {
+    "baseline_mean_total_tokens": 958403.5,
+    "baseline_mean_estimated_cost_usd": 2.50132825,
+    "minimum_efficiency_reduction": 0.25,
+    "maximum_actions_after_last_new_target": 10,
+    "maximum_identical_executed_signature_streak": 2,
+    "minimum_pooled_behavior_coverage": 0.9777777777777777
+  }
+}

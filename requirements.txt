@@ -1,0 +1,9 @@
+requests
+rpyc
+python-dotenv
+PyPDF2
+playwright
+Pillow
+reportlab
+brotli
+fonttools

@@ -1,0 +1,9 @@
+{
+  "executable": "evaluation/local/tools/ChromeCacheView.exe",
+  "executable_sha256": "57f8e4e1d3339c0abadc0f64fc6a4abaff19cd138724cdbb3fae5f37905547c5",
+  "csv_path": "evaluation/evidence/final20/live_runs/campaign_20260719T041323Z_14/chromecacheview.csv",
+  "extract_dir": "evaluation/evidence/final20/live_runs/campaign_20260719T041323Z_14/extracted_cache",
+  "record_count": 34,
+  "export_returncode": 0,
+  "copy_returncode": 0
+}

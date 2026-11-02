@@ -1,0 +1,60 @@
+{
+  "tool_plan": {
+    "tool": {
+      "name": "ChromeCacheView",
+      "version": "2.52"
+    },
+    "objective": "Generate representative Chrome web-cache content and preserve the Chrome Cache_Data source for ChromeCacheView listing, metadata review, export, and file extraction.",
+    "required_actions": [
+      {
+        "name": "browser.launch",
+        "why": "Starts a Chromium session that creates the Chrome profile cache source."
+      },
+      {
+        "name": "browser.goto",
+        "why": "Loads distinct web resources that can populate cache entries and HTTP metadata."
+      },
+      {
+        "name": "browser.get_clickables",
+        "why": "Observes visible page controls before exercising content-affecting interactions."
+      },
+      {
+        "name": "browser.smart_type",
+        "why": "Performs realistic search input that can produce parameterized cached responses."
+      },
+      {
+        "name": "browser.smart_click",
+        "why": "Follows visible links or results to retrieve materially different cacheable content."
+      },
+      {
+        "name": "browser.scroll",
+        "why": "Reveals deferred or lazy-loaded resources that may add cache entries."
+      },
+      {
+        "name": "browser.screenshot",
+        "why": "Preserves a visible-state representation to correlate with cached content."
+      },
+      {
+        "name": "browser.close",
+        "why": "Closes the session so pending browser cache writes can be finalized before collection."
+      }
+    ],
+    "forbidden_actions": [],
+    "required_artifacts": [
+      "chromium.cache.cache_data"
+    ],
+    "trigger_actions": [
+      "browser.close"
+    ],
+    "completion": {
+      "type": "required_artifacts_present",
+      "detail": "Complete after the Chromium session has been closed and the Chrome Cache_Data artifact is present for collection."
+    },
+    "action_intent_guidance": "Action Flow: Launch Chromium, then use run-provided runtime resources with browser.goto to load a few relevant, cacheable pages that naturally retrieve varied visible content. On pages with visible search or navigation controls, use browser.get_clickables to identify available controls, browser.smart_type to enter a realistic search or other visible input, and browser.smart_click to open visible results or links that retrieve materially different resources. Use browser.scroll on content-rich pages to reveal deferred resources, then re-run browser.get_clickables where newly visible controls may support additional bounded interaction. Capture browser.screenshot while representative content is visible. Navigate among distinct runtime-provided resources as needed, then browser.close to finalize cache writes. This activity should create Chrome Cache_Data entries for documents, images, scripts, media, and parameterized responses where served cacheably. Reason guidance: write context-specific reasons that state the page activity and expected cache effect, such as loading a resource-rich page to populate cache entries, submitting visible search input to request a parameterized response, op",
+    "_provenance": {
+      "model": "gpt-5.6-terra",
+      "notes": "3-stage TMI: IR -> bounded mapping -> tool_plan (leaf artifact keys only; with JSON repairs)",
+      "platform": "windows"
+    }
+  }
+}

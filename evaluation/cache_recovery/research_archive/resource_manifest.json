@@ -1,0 +1,1656 @@
+{
+  "resources": [
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=300"
+        ],
+        [
+          "ETag",
+          "\"sha256-88eb511cc374f661d543e84e91e154679b7c8521d7a2c1abf984c18f01dcd70f\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "passive",
+      "content_encoding": "identity",
+      "decoded_sha256": "88eb511cc374f661d543e84e91e154679b7c8521d7a2c1abf984c18f01dcd70f",
+      "decoded_size": 4495,
+      "encoded_sha256": "88eb511cc374f661d543e84e91e154679b7c8521d7a2c1abf984c18f01dcd70f",
+      "encoded_size": 4495,
+      "journey": "entry",
+      "media_type": "text/html; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 1,
+      "resource_id": "passive.home_html",
+      "status": 200,
+      "trigger": "entry_navigation",
+      "url": "/",
+      "url_pattern": "/",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-204be1d13a102fd38cb04cc71283677e90c2640c643ebcb6743c7ab993973196\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "passive",
+      "content_encoding": "identity",
+      "decoded_sha256": "204be1d13a102fd38cb04cc71283677e90c2640c643ebcb6743c7ab993973196",
+      "decoded_size": 10449,
+      "encoded_sha256": "204be1d13a102fd38cb04cc71283677e90c2640c643ebcb6743c7ab993973196",
+      "encoded_size": 10449,
+      "journey": "entry",
+      "media_type": "text/css; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 2,
+      "resource_id": "passive.base_css",
+      "status": 200,
+      "trigger": "entry_navigation",
+      "url": "/static/css/base.css",
+      "url_pattern": "/static/css/base.css",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-71d80c543790ab6710622b1a1421a2f58c933cedcdb4815e0c48d525117cb138\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "passive",
+      "content_encoding": "identity",
+      "decoded_sha256": "71d80c543790ab6710622b1a1421a2f58c933cedcdb4815e0c48d525117cb138",
+      "decoded_size": 925,
+      "encoded_sha256": "71d80c543790ab6710622b1a1421a2f58c933cedcdb4815e0c48d525117cb138",
+      "encoded_size": 925,
+      "journey": "entry",
+      "media_type": "application/javascript; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 2,
+      "resource_id": "passive.base_js",
+      "status": 200,
+      "trigger": "entry_navigation",
+      "url": "/static/js/base.js",
+      "url_pattern": "/static/js/base.js",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-bd54f3b813b603626df2644087c08fba979aa15bc451695195346042ebc22792\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "passive",
+      "content_encoding": "identity",
+      "decoded_sha256": "bd54f3b813b603626df2644087c08fba979aa15bc451695195346042ebc22792",
+      "decoded_size": 779,
+      "encoded_sha256": "bd54f3b813b603626df2644087c08fba979aa15bc451695195346042ebc22792",
+      "encoded_size": 779,
+      "journey": "entry",
+      "media_type": "image/png",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 2,
+      "resource_id": "passive.identity_png",
+      "status": 200,
+      "trigger": "entry_navigation",
+      "url": "/static/images/archive-identity.png",
+      "url_pattern": "/static/images/archive-identity.png",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=300"
+        ],
+        [
+          "ETag",
+          "\"sha256-fc17563b5db4d5ce7ae71f0888ab8e54f66a6b9795108de7737e8165b2f87030\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "fc17563b5db4d5ce7ae71f0888ab8e54f66a6b9795108de7737e8165b2f87030",
+      "decoded_size": 2094,
+      "encoded_sha256": "fc17563b5db4d5ce7ae71f0888ab8e54f66a6b9795108de7737e8165b2f87030",
+      "encoded_size": 2094,
+      "journey": "discover",
+      "media_type": "text/html; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 1,
+      "resource_id": "discover.html.01",
+      "status": 200,
+      "trigger": "navigation_01",
+      "url": "/collections",
+      "url_pattern": "/collections",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-8a736453ee6336819dff708922508500620cb33387add87c036545e6eba29adc\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "8a736453ee6336819dff708922508500620cb33387add87c036545e6eba29adc",
+      "decoded_size": 3326,
+      "encoded_sha256": "8a736453ee6336819dff708922508500620cb33387add87c036545e6eba29adc",
+      "encoded_size": 3326,
+      "journey": "discover",
+      "media_type": "text/css; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 2,
+      "resource_id": "discover.css.01",
+      "status": 200,
+      "trigger": "navigation_01",
+      "url": "/static/css/collections.css",
+      "url_pattern": "/static/css/collections.css",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=300"
+        ],
+        [
+          "ETag",
+          "\"sha256-5cd003d5cf9ff40b9662908de581d555e4e866bc5aa4393a2adbcb79d202150c\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "5cd003d5cf9ff40b9662908de581d555e4e866bc5aa4393a2adbcb79d202150c",
+      "decoded_size": 3301,
+      "encoded_sha256": "5cd003d5cf9ff40b9662908de581d555e4e866bc5aa4393a2adbcb79d202150c",
+      "encoded_size": 3301,
+      "journey": "discover",
+      "media_type": "text/html; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 1,
+      "resource_id": "discover.html.02",
+      "status": 200,
+      "trigger": "navigation_02",
+      "url": "/collections/environmental-signals",
+      "url_pattern": "/collections/environmental-signals",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-dcdfa86a3d39c1ef25bf39d4299dc65c1ee2a68545cb9aa6b96f52c026e03b23\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "dcdfa86a3d39c1ef25bf39d4299dc65c1ee2a68545cb9aa6b96f52c026e03b23",
+      "decoded_size": 2312,
+      "encoded_sha256": "dcdfa86a3d39c1ef25bf39d4299dc65c1ee2a68545cb9aa6b96f52c026e03b23",
+      "encoded_size": 2312,
+      "journey": "discover",
+      "media_type": "application/javascript; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 2,
+      "resource_id": "discover.js.01",
+      "status": 200,
+      "trigger": "navigation_02",
+      "url": "/static/js/collections.js",
+      "url_pattern": "/static/js/collections.js",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-b57d20649e57430d3bdf418f840f5b77c505a37cf3892bdb487d44f56def3a4d\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "b57d20649e57430d3bdf418f840f5b77c505a37cf3892bdb487d44f56def3a4d",
+      "decoded_size": 201,
+      "encoded_sha256": "b57d20649e57430d3bdf418f840f5b77c505a37cf3892bdb487d44f56def3a4d",
+      "encoded_size": 201,
+      "journey": "discover",
+      "media_type": "application/json; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 1,
+      "resource_id": "discover.json.01",
+      "status": 200,
+      "trigger": "dynamic_request_01",
+      "url": "/api/collections/environmental-signals",
+      "url_pattern": "/api/collections/environmental-signals",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-2b3f299a3a9ed667112a6080524faf6ab0556e684b31ddebb13bad21cc1a8293\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "2b3f299a3a9ed667112a6080524faf6ab0556e684b31ddebb13bad21cc1a8293",
+      "decoded_size": 366276,
+      "encoded_sha256": "2b3f299a3a9ed667112a6080524faf6ab0556e684b31ddebb13bad21cc1a8293",
+      "encoded_size": 366276,
+      "journey": "discover",
+      "media_type": "image/webp",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 1,
+      "resource_id": "discover.webp.01",
+      "status": 200,
+      "trigger": "viewport_reveal_01",
+      "url": "/static/images/coastal-observation.webp",
+      "url_pattern": "/static/images/coastal-observation.webp",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-7885cd7d64514814d14682f6f038f6e1fbd2af87e1d87831d37d5c8faf41fb95\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "7885cd7d64514814d14682f6f038f6e1fbd2af87e1d87831d37d5c8faf41fb95",
+      "decoded_size": 306724,
+      "encoded_sha256": "7885cd7d64514814d14682f6f038f6e1fbd2af87e1d87831d37d5c8faf41fb95",
+      "encoded_size": 306724,
+      "journey": "discover",
+      "media_type": "image/jpeg",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 2,
+      "resource_id": "discover.jpeg.01",
+      "status": 200,
+      "trigger": "viewport_reveal_01",
+      "url": "/static/images/field-research.jpg",
+      "url_pattern": "/static/images/field-research.jpg",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-1d01c418fcf478fd98e34466efd87bb02723c6d6c0fb4c6af88b8287ddfe297d\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "1d01c418fcf478fd98e34466efd87bb02723c6d6c0fb4c6af88b8287ddfe297d",
+      "decoded_size": 2524048,
+      "encoded_sha256": "1d01c418fcf478fd98e34466efd87bb02723c6d6c0fb4c6af88b8287ddfe297d",
+      "encoded_size": 2524048,
+      "journey": "discover",
+      "media_type": "image/png",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 3,
+      "resource_id": "discover.png.01",
+      "status": 200,
+      "trigger": "viewport_reveal_01",
+      "url": "/static/images/sensor-array.png",
+      "url_pattern": "/static/images/sensor-array.png",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=300"
+        ],
+        [
+          "ETag",
+          "\"sha256-1e41d4eddd2d7812e8bd07e952f74c9fef3a7906c3c42a8d8ef1188bc87526a5\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "1e41d4eddd2d7812e8bd07e952f74c9fef3a7906c3c42a8d8ef1188bc87526a5",
+      "decoded_size": 850,
+      "encoded_sha256": "1e41d4eddd2d7812e8bd07e952f74c9fef3a7906c3c42a8d8ef1188bc87526a5",
+      "encoded_size": 850,
+      "journey": "discover",
+      "media_type": "text/html; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 1,
+      "resource_id": "discover.html.03",
+      "status": 200,
+      "trigger": "embedded_open_01",
+      "url": "/embed/map",
+      "url_pattern": "/embed/map",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-9781e76836c43c19fad676be340cbe67f0415bd26ead7c6ba6b7101a0e04d730\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "9781e76836c43c19fad676be340cbe67f0415bd26ead7c6ba6b7101a0e04d730",
+      "decoded_size": 2416,
+      "encoded_sha256": "9781e76836c43c19fad676be340cbe67f0415bd26ead7c6ba6b7101a0e04d730",
+      "encoded_size": 2416,
+      "journey": "discover",
+      "media_type": "text/css; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 2,
+      "resource_id": "discover.css.02",
+      "status": 200,
+      "trigger": "embedded_open_01",
+      "url": "/static/css/map.css",
+      "url_pattern": "/static/css/map.css",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-7545251f5a1034fbeb7696b9174b158ddb4a422045062dd9c916d21aa90f7e68\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "7545251f5a1034fbeb7696b9174b158ddb4a422045062dd9c916d21aa90f7e68",
+      "decoded_size": 883,
+      "encoded_sha256": "7545251f5a1034fbeb7696b9174b158ddb4a422045062dd9c916d21aa90f7e68",
+      "encoded_size": 883,
+      "journey": "discover",
+      "media_type": "application/javascript; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 2,
+      "resource_id": "discover.js.02",
+      "status": 200,
+      "trigger": "embedded_open_01",
+      "url": "/static/js/map.js",
+      "url_pattern": "/static/js/map.js",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-b2657d53bba803ddad8dddd3950714bb481eb5a2fb48b55c2079b0bc4a1e1044\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "b2657d53bba803ddad8dddd3950714bb481eb5a2fb48b55c2079b0bc4a1e1044",
+      "decoded_size": 245,
+      "encoded_sha256": "b2657d53bba803ddad8dddd3950714bb481eb5a2fb48b55c2079b0bc4a1e1044",
+      "encoded_size": 245,
+      "journey": "discover",
+      "media_type": "application/json; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 3,
+      "resource_id": "discover.json.02",
+      "status": 200,
+      "trigger": "embedded_open_01",
+      "url": "/api/map/observations",
+      "url_pattern": "/api/map/observations",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=300"
+        ],
+        [
+          "ETag",
+          "\"sha256-f465640f2dfa6081ea8c9c979f02d1a2c0525a6ee80ae424c1a3b54ffd310fda\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "f465640f2dfa6081ea8c9c979f02d1a2c0525a6ee80ae424c1a3b54ffd310fda",
+      "decoded_size": 2210,
+      "encoded_sha256": "f465640f2dfa6081ea8c9c979f02d1a2c0525a6ee80ae424c1a3b54ffd310fda",
+      "encoded_size": 2210,
+      "journey": "discover",
+      "media_type": "text/html; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 1,
+      "resource_id": "discover.html.04",
+      "status": 200,
+      "trigger": "navigation_03",
+      "url": "/map",
+      "url_pattern": "/map",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=300"
+        ],
+        [
+          "ETag",
+          "\"sha256-dec4b7a4e8b3cf5110e233829e24fc5fa3e77c7594da417fe9b9ac0da70630c2\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "dec4b7a4e8b3cf5110e233829e24fc5fa3e77c7594da417fe9b9ac0da70630c2",
+      "decoded_size": 3408,
+      "encoded_sha256": "dec4b7a4e8b3cf5110e233829e24fc5fa3e77c7594da417fe9b9ac0da70630c2",
+      "encoded_size": 3408,
+      "journey": "inquiry",
+      "media_type": "text/html; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [
+        [
+          "query",
+          "coastal"
+        ]
+      ],
+      "request_order": 1,
+      "resource_id": "inquiry.html.01",
+      "status": 200,
+      "trigger": "submit_01",
+      "url": "/search?query=coastal",
+      "url_pattern": "/search?query={query}",
+      "variant_id": "coastal"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-0932044407368ac9ea9c793874edb74148bbed70667a8a5336f8a2af60e8928f\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "0932044407368ac9ea9c793874edb74148bbed70667a8a5336f8a2af60e8928f",
+      "decoded_size": 1548,
+      "encoded_sha256": "0932044407368ac9ea9c793874edb74148bbed70667a8a5336f8a2af60e8928f",
+      "encoded_size": 1548,
+      "journey": "inquiry",
+      "media_type": "text/css; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 2,
+      "resource_id": "inquiry.css.01",
+      "status": 200,
+      "trigger": "submit_01",
+      "url": "/static/css/search.css",
+      "url_pattern": "/static/css/search.css",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-7238aa904efc75c8a1b8f63966bb1312a20bc5e6438fd0b2cce8211a72218b23\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "7238aa904efc75c8a1b8f63966bb1312a20bc5e6438fd0b2cce8211a72218b23",
+      "decoded_size": 2046,
+      "encoded_sha256": "7238aa904efc75c8a1b8f63966bb1312a20bc5e6438fd0b2cce8211a72218b23",
+      "encoded_size": 2046,
+      "journey": "inquiry",
+      "media_type": "application/javascript; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 2,
+      "resource_id": "inquiry.js.01",
+      "status": 200,
+      "trigger": "submit_01",
+      "url": "/static/js/search.js",
+      "url_pattern": "/static/js/search.js",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-65ff1312d689474ecca62eca73e7f9d55ad38c32c15b75ff21c52c9056b13f80\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "65ff1312d689474ecca62eca73e7f9d55ad38c32c15b75ff21c52c9056b13f80",
+      "decoded_size": 127,
+      "encoded_sha256": "65ff1312d689474ecca62eca73e7f9d55ad38c32c15b75ff21c52c9056b13f80",
+      "encoded_size": 127,
+      "journey": "inquiry",
+      "media_type": "application/json; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [
+        [
+          "query",
+          "coastal"
+        ],
+        [
+          "topic",
+          "environment"
+        ],
+        [
+          "year",
+          "2026"
+        ],
+        [
+          "format",
+          "report"
+        ],
+        [
+          "sort",
+          "newest"
+        ]
+      ],
+      "request_order": 1,
+      "resource_id": "inquiry.json.01",
+      "status": 200,
+      "trigger": "parameter_commit_01",
+      "url": "/api/search?query=coastal&topic=environment&year=2026&format=report&sort=newest",
+      "url_pattern": "/api/search?query={query}&topic={topic}&year={year}&format={format}&sort={sort}",
+      "variant_id": "coastal-report"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-51c443cede2e5b03ef113f46d4e733665aeae9d9bb24c6337132c0af2bbf77a3\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "51c443cede2e5b03ef113f46d4e733665aeae9d9bb24c6337132c0af2bbf77a3",
+      "decoded_size": 122,
+      "encoded_sha256": "51c443cede2e5b03ef113f46d4e733665aeae9d9bb24c6337132c0af2bbf77a3",
+      "encoded_size": 122,
+      "journey": "inquiry",
+      "media_type": "application/json; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [
+        [
+          "query",
+          "transit"
+        ],
+        [
+          "topic",
+          "cities"
+        ],
+        [
+          "year",
+          "2025"
+        ],
+        [
+          "format",
+          "dataset"
+        ],
+        [
+          "sort",
+          "title"
+        ]
+      ],
+      "request_order": 1,
+      "resource_id": "inquiry.json.01",
+      "status": 200,
+      "trigger": "parameter_commit_01",
+      "url": "/api/search?query=transit&topic=cities&year=2025&format=dataset&sort=title",
+      "url_pattern": "/api/search?query={query}&topic={topic}&year={year}&format={format}&sort={sort}",
+      "variant_id": "urban-data"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-8f80d1c0d036dc9f10d762e32d82a8f38ca5b1332029398c93a002df4dccc2f5\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "8f80d1c0d036dc9f10d762e32d82a8f38ca5b1332029398c93a002df4dccc2f5",
+      "decoded_size": 124,
+      "encoded_sha256": "8f80d1c0d036dc9f10d762e32d82a8f38ca5b1332029398c93a002df4dccc2f5",
+      "encoded_size": 124,
+      "journey": "inquiry",
+      "media_type": "application/json; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [
+        [
+          "query",
+          "archives"
+        ],
+        [
+          "topic",
+          "media"
+        ],
+        [
+          "year",
+          "2024"
+        ],
+        [
+          "format",
+          "image"
+        ],
+        [
+          "sort",
+          "relevance"
+        ]
+      ],
+      "request_order": 1,
+      "resource_id": "inquiry.json.01",
+      "status": 200,
+      "trigger": "parameter_commit_01",
+      "url": "/api/search?query=archives&topic=media&year=2024&format=image&sort=relevance",
+      "url_pattern": "/api/search?query={query}&topic={topic}&year={year}&format={format}&sort={sort}",
+      "variant_id": "media-images"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=300"
+        ],
+        [
+          "ETag",
+          "\"sha256-761661766b6de5a712fe22871c8dd2afc860bb32e0cda269e4163faaec843cbd\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "761661766b6de5a712fe22871c8dd2afc860bb32e0cda269e4163faaec843cbd",
+      "decoded_size": 2484,
+      "encoded_sha256": "761661766b6de5a712fe22871c8dd2afc860bb32e0cda269e4163faaec843cbd",
+      "encoded_size": 2484,
+      "journey": "retrieve",
+      "media_type": "text/html; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 1,
+      "resource_id": "retrieve.html.01",
+      "status": 200,
+      "trigger": "navigation_01",
+      "url": "/reports/web-evidence",
+      "url_pattern": "/reports/web-evidence",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-834b205e6f16cb8e6abe75ba18975f80c467fc8f18f259cfa13844b392ee3973\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "834b205e6f16cb8e6abe75ba18975f80c467fc8f18f259cfa13844b392ee3973",
+      "decoded_size": 1587,
+      "encoded_sha256": "834b205e6f16cb8e6abe75ba18975f80c467fc8f18f259cfa13844b392ee3973",
+      "encoded_size": 1587,
+      "journey": "retrieve",
+      "media_type": "text/css; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 2,
+      "resource_id": "retrieve.css.01",
+      "status": 200,
+      "trigger": "navigation_01",
+      "url": "/static/css/report.css",
+      "url_pattern": "/static/css/report.css",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-b562451637b13023b63b3ae0f56d12ddfe64349f913b5c1759df25a324d66e78\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "b562451637b13023b63b3ae0f56d12ddfe64349f913b5c1759df25a324d66e78",
+      "decoded_size": 524,
+      "encoded_sha256": "b562451637b13023b63b3ae0f56d12ddfe64349f913b5c1759df25a324d66e78",
+      "encoded_size": 524,
+      "journey": "retrieve",
+      "media_type": "application/javascript; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 2,
+      "resource_id": "retrieve.js.01",
+      "status": 200,
+      "trigger": "navigation_01",
+      "url": "/static/js/report.js",
+      "url_pattern": "/static/js/report.js",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-ee82c9335db7d0943f0670df4a943cf73c5f376470ebd6298bdc194294562927\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "ee82c9335db7d0943f0670df4a943cf73c5f376470ebd6298bdc194294562927",
+      "decoded_size": 445361,
+      "encoded_sha256": "ee82c9335db7d0943f0670df4a943cf73c5f376470ebd6298bdc194294562927",
+      "encoded_size": 445361,
+      "journey": "retrieve",
+      "media_type": "image/jpeg",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 2,
+      "resource_id": "retrieve.jpeg.01",
+      "status": 200,
+      "trigger": "navigation_01",
+      "url": "/static/images/web-evidence-figure.jpg",
+      "url_pattern": "/static/images/web-evidence-figure.jpg",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-96e9295bb4413fe2cfcc7b94a8d35103e987d74ee8e540f9de2b4c43bbd9246f\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "96e9295bb4413fe2cfcc7b94a8d35103e987d74ee8e540f9de2b4c43bbd9246f",
+      "decoded_size": 563167,
+      "encoded_sha256": "96e9295bb4413fe2cfcc7b94a8d35103e987d74ee8e540f9de2b4c43bbd9246f",
+      "encoded_size": 563167,
+      "journey": "retrieve",
+      "media_type": "application/pdf",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 1,
+      "resource_id": "retrieve.pdf.01",
+      "status": 200,
+      "trigger": "inline_open_01",
+      "url": "/documents/web-evidence.pdf",
+      "url_pattern": "/documents/web-evidence.pdf",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-0e0369daabb15363961be60b0cc2759503a6d2176e425aa95e79bc4356338da4\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "0e0369daabb15363961be60b0cc2759503a6d2176e425aa95e79bc4356338da4",
+      "decoded_size": 3994,
+      "encoded_sha256": "0e0369daabb15363961be60b0cc2759503a6d2176e425aa95e79bc4356338da4",
+      "encoded_size": 3994,
+      "journey": "retrieve",
+      "media_type": "application/pdf",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 1,
+      "resource_id": "retrieve.pdf.02",
+      "status": 200,
+      "trigger": "download_01",
+      "url": "/documents/methods-supplement.pdf",
+      "url_pattern": "/documents/methods-supplement.pdf",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=300"
+        ],
+        [
+          "ETag",
+          "\"sha256-b7a853e965b2022c76f4461230e72d5651eb8813450807fd6e963022b34aa92f\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "b7a853e965b2022c76f4461230e72d5651eb8813450807fd6e963022b34aa92f",
+      "decoded_size": 3085,
+      "encoded_sha256": "b7a853e965b2022c76f4461230e72d5651eb8813450807fd6e963022b34aa92f",
+      "encoded_size": 3085,
+      "journey": "retrieve",
+      "media_type": "text/html; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 1,
+      "resource_id": "retrieve.html.02",
+      "status": 200,
+      "trigger": "navigation_02",
+      "url": "/datasets/regional-observations",
+      "url_pattern": "/datasets/regional-observations",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-ce39deb5578c10d31d2fca495778b82a823c5e7072ffe851e9ba2e1610842900\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "ce39deb5578c10d31d2fca495778b82a823c5e7072ffe851e9ba2e1610842900",
+      "decoded_size": 2316,
+      "encoded_sha256": "ce39deb5578c10d31d2fca495778b82a823c5e7072ffe851e9ba2e1610842900",
+      "encoded_size": 2316,
+      "journey": "retrieve",
+      "media_type": "text/css; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 2,
+      "resource_id": "retrieve.css.02",
+      "status": 200,
+      "trigger": "navigation_02",
+      "url": "/static/css/dataset.css",
+      "url_pattern": "/static/css/dataset.css",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-6b2c457f7f0dd8032c200dda62313716e764aae54f2fa1f885a5246144e469df\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "6b2c457f7f0dd8032c200dda62313716e764aae54f2fa1f885a5246144e469df",
+      "decoded_size": 1406,
+      "encoded_sha256": "6b2c457f7f0dd8032c200dda62313716e764aae54f2fa1f885a5246144e469df",
+      "encoded_size": 1406,
+      "journey": "retrieve",
+      "media_type": "application/javascript; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 2,
+      "resource_id": "retrieve.js.02",
+      "status": 200,
+      "trigger": "navigation_02",
+      "url": "/static/js/dataset.js",
+      "url_pattern": "/static/js/dataset.js",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-9b11c515c550e852c9edc7a0b773f83d2768063a89ca0acf4fa0b4fb523210e7\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "9b11c515c550e852c9edc7a0b773f83d2768063a89ca0acf4fa0b4fb523210e7",
+      "decoded_size": 736,
+      "encoded_sha256": "9b11c515c550e852c9edc7a0b773f83d2768063a89ca0acf4fa0b4fb523210e7",
+      "encoded_size": 736,
+      "journey": "retrieve",
+      "media_type": "application/json; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [
+        [
+          "region",
+          "all"
+        ],
+        [
+          "measure",
+          "temperature"
+        ]
+      ],
+      "request_order": 1,
+      "resource_id": "retrieve.json.01",
+      "status": 200,
+      "trigger": "parameter_request_01",
+      "url": "/api/datasets/regional-observations?region=all&measure=temperature",
+      "url_pattern": "/api/datasets/regional-observations?region={region}&measure={measure}",
+      "variant_id": "all-temperature"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-86b88f38f60c75ff041c3558aedcf2077f10186e8e4b6ef54c8e5f0e92e8c800\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "86b88f38f60c75ff041c3558aedcf2077f10186e8e4b6ef54c8e5f0e92e8c800",
+      "decoded_size": 275,
+      "encoded_sha256": "86b88f38f60c75ff041c3558aedcf2077f10186e8e4b6ef54c8e5f0e92e8c800",
+      "encoded_size": 275,
+      "journey": "retrieve",
+      "media_type": "application/json; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [
+        [
+          "region",
+          "estuary"
+        ],
+        [
+          "measure",
+          "salinity"
+        ]
+      ],
+      "request_order": 1,
+      "resource_id": "retrieve.json.01",
+      "status": 200,
+      "trigger": "parameter_request_01",
+      "url": "/api/datasets/regional-observations?region=estuary&measure=salinity",
+      "url_pattern": "/api/datasets/regional-observations?region={region}&measure={measure}",
+      "variant_id": "estuary-salinity"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-2b3aea677504d4b2eb96d84da8c94a7452b12c0a31647e39617dfa3fafe7621f\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "2b3aea677504d4b2eb96d84da8c94a7452b12c0a31647e39617dfa3fafe7621f",
+      "decoded_size": 271,
+      "encoded_sha256": "2b3aea677504d4b2eb96d84da8c94a7452b12c0a31647e39617dfa3fafe7621f",
+      "encoded_size": 271,
+      "journey": "retrieve",
+      "media_type": "application/json; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [
+        [
+          "region",
+          "harbor"
+        ],
+        [
+          "measure",
+          "turbidity"
+        ]
+      ],
+      "request_order": 1,
+      "resource_id": "retrieve.json.01",
+      "status": 200,
+      "trigger": "parameter_request_01",
+      "url": "/api/datasets/regional-observations?region=harbor&measure=turbidity",
+      "url_pattern": "/api/datasets/regional-observations?region={region}&measure={measure}",
+      "variant_id": "harbor-turbidity"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-3768471daaf419bb08c40903c97efcfd742f0f2486faababf8892286fd19e211\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "3768471daaf419bb08c40903c97efcfd742f0f2486faababf8892286fd19e211",
+      "decoded_size": 335,
+      "encoded_sha256": "3768471daaf419bb08c40903c97efcfd742f0f2486faababf8892286fd19e211",
+      "encoded_size": 335,
+      "journey": "retrieve",
+      "media_type": "text/csv; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 1,
+      "resource_id": "retrieve.csv.01",
+      "status": 200,
+      "trigger": "download_02",
+      "url": "/downloads/regional-observations.csv",
+      "url_pattern": "/downloads/regional-observations.csv",
+      "variant_id": "default"
+    },
+    {
+      "cache_eligible": true,
+      "cache_headers": [
+        [
+          "Cache-Control",
+          "public, max-age=3600"
+        ],
+        [
+          "ETag",
+          "\"sha256-a294817d3707c4eea9e491cf5b0701c2aa640023901b0cbbe236e8e1c716e4e0\""
+        ],
+        [
+          "Last-Modified",
+          "Sat, 18 Jul 2026 00:00:00 GMT"
+        ],
+        [
+          "Content-Encoding",
+          "identity"
+        ],
+        [
+          "Vary",
+          "Accept-Encoding"
+        ]
+      ],
+      "classification": "interactive",
+      "content_encoding": "identity",
+      "decoded_sha256": "a294817d3707c4eea9e491cf5b0701c2aa640023901b0cbbe236e8e1c716e4e0",
+      "decoded_size": 1425,
+      "encoded_sha256": "a294817d3707c4eea9e491cf5b0701c2aa640023901b0cbbe236e8e1c716e4e0",
+      "encoded_size": 1425,
+      "journey": "retrieve",
+      "media_type": "application/json; charset=utf-8",
+      "method": "GET",
+      "parameter_variant": [],
+      "request_order": 1,
+      "resource_id": "retrieve.json.02",
+      "status": 200,
+      "trigger": "download_03",
+      "url": "/downloads/regional-observations.json",
+      "url_pattern": "/downloads/regional-observations.json",
+      "variant_id": "default"
+    }
+  ],
+  "schema_version": 2,
+  "site_id": "research-archive",
+  "site_version": "2026-07-18"
+}

@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "tool_testing",
+  "run_full_trigger": false,
+  "full_trigger_base_url": null,
+  "agents": {
+    "A1": {
+      "display_name": "Agent A1",
+      "persona": "You are a tool-testing bot (primary executor) validating the forensic tool 'ChromeCacheView' (version: 2.52).\nYour only goal is to generate the required forensic artifacts so the tool can be tested.\n\nOperating rules:\n- Prioritize executing required_actions that lead to required_artifacts.\n- Keep actions minimal and directly tied to artifact generation.\n- Avoid irrelevant chat; only communicate if an action requires it (e.g., *.send_message).\n- Never perform forbidden_actions.\n\nArtifact-first execution rules:\n- Choose actions to intentionally generate the required_artifacts (not merely to follow required_actions).\n- Interpret required_actions as allowed primitives; you still must pick parameters that cause artifact creation.\nNavigation validity rules (browser.goto):\n- Choose a URL that is likely reachable and returns a normal page.\n- After execution, check success (ok=true). If ok=false, switch to a different URL rather than retrying.\n- Prefer URLs that match the artifact goal implied by required_artifacts.\nAction intent guidance (derived from tool plan):\n- Action Flow: Launch Chrome using the controlled profile. Use runtime-provided relevant navigation targets with browser.goto to load a few distinct, content-rich pages that naturally request documents, images, scripts, and other cacheable resources. On each visible page, use browser.get_clickables to observe available controls; where additional content is visibility-bounded, use a bounded observe -> browser.scroll or compatible browser.select_option/browser.click -> re-observe loop to reveal and request progressive or lazy-loaded resources. Use browser.smart_type only with visible search or form fields, then commit using an appropriate discovered browser.click or compatible browser.select_option so parameterized responses and associated resources are requested. Capture browser.screenshot while representative loaded content is visible. Close Chrome with browser.close to flush pending cache writes, producing chromium.cache.cache_data. Reason guidance: write context-specific reasons that identify the observed page interaction and expected cache effect, such as loading resource-rich content, submitting a visible query to request a parameterized response, or scrolling to request newly re\nReason-writing rules:\n- Write one short sentence that links (artifact goal) + (intent) + (expected effect).\n- Avoid repeating the exact same reason text across steps.\n\nPlan context:\n- required_actions: browser.launch, browser.get_clickables, browser.goto, browser.smart_type, browser.click, browser.select_option, browser.scroll, browser.screenshot, browser.close\n- forbidden_actions: (none)\n- required_artifacts: chromium.cache.cache_data\n",
+      "platforms": {},
+      "browser": {
+        "engine": "chromium",
+        "channel": "chrome"
+      }
+    }
+  },
+  "rendezvous": {
+    "platform": ""
+  },
+  "scenario": {
+    "objective": "Generate representative Chrome web-cache content and preserve the Chrome Cache_Data artifact that ChromeCacheView can list, export, preview, and extract.",
+    "notes": {
+      "tool": {
+        "name": "ChromeCacheView",
+        "version": "2.52"
+      },
+      "run_id": "campaign_20260719T041323Z_13"
+    }
+  },
+  "run_limits": {
+    "max_actions_total": 40,
+    "max_minutes": 15
+  },
+  "global_prompt": {
+    "interaction_style": [
+      "TOOL-TESTING MODE: prioritize generating required artifacts over conversation.",
+      "Be concise; do not roleplay an investigation case.",
+      "Only communicate if a required action needs it (e.g., *.send_message).",
+      "When logging reasons, state which artifact the action is meant to generate."
+    ],
+    "hard_constraints": [
+      "Do not execute forbidden actions.",
+      {
+        "forbidden_actions": []
+      },
+      {
+        "forbidden_action_reasons": {}
+      }
+    ],
+    "completion_criteria": [
+      {
+        "type": "required_artifacts_present",
+        "detail": "Complete only after Chrome has been closed and the collected profile contains the chromium.cache.cache_data artifact."
+      }
+    ]
+  },
+  "vm_boot": {
+    "enabled": true,
+    "provider": "vmware",
+    "gui": true,
+    "vmrun_path": "C:\\Program Files (x86)\\VMware\\VMware Workstation\\vmrun.exe",
+    "vmx_paths": {
+      "A1": "C:\\Users\\...\\VM_Agent1.vmx",
+      "A2": "C:\\Users\\...\\VM_Agent2.vmx",
+      "A3": "C:\\Users\\...\\VM_Agent3.vmx",
+      "A4": "C:\\Users\\...\\VM_Agent4.vmx"
+    },
+    "wait_timeout_sec": 180,
+    "poll_interval_sec": 2.0
+  },
+  "discovery": {
+    "rpyc_port": 18861,
+    "subnet": "..."
+  },
+  "snapshot": {
+    "time_trigger": {
+      "enabled": false,
+      "interval": "00:10",
+      "cooldown_sec": 0
+    },
+    "event_trigger": {
+      "enabled": true,
+      "on_actions": [
+        "browser.smart_type",
+        "browser.close"
+      ],
+      "cooldown_sec": 0,
+      "conditions": [
+        {
+          "left": "agent_id",
+          "op": "eq",
+          "right": "A1"
+        },
+        {
+          "left": "result.ok",
+          "op": "eq",
+          "right": true
+        }
+      ]
+    },
+    "collection_plan": {
+      "agent_id": "A1",
+      "artifacts": [
+        "chromium.cache.cache_data"
+      ],
+      "limits": {
+        "max_file_mb": 400,
+        "max_total_mb": 2048
+      },
+      "options": {
+        "browser": "chrome",
+        "profile": "Default"
+      }
+    }
+  },
+  "available_resources": {
+    "web_url": "http://research-archive.test:8765/start?run_id=campaign_20260719T041323Z_13"
+  },
+  "tool_validation": {
+    "required_actions": [
+      "browser.launch",
+      "browser.get_clickables",
+      "browser.goto",
+      "browser.smart_type",
+      "browser.click",
+      "browser.select_option",
+      "browser.scroll",
+      "browser.screenshot",
+      "browser.close"
+    ],
+    "required_action_intents": {
+      "browser.launch": "Launch Chrome with a controlled profile to create cache evidence.",
+      "browser.get_clickables": "Discover visible controls and meaningful navigation or form effects.",
+      "browser.goto": "Request distinct documents and resources that populate the Chrome cache.",
+      "browser.smart_type": "Submit realistic search or form input that produces parameterized cached responses.",
+      "browser.click": "Commit discovered controls and exercise resulting page or resource requests.",
+      "browser.select_option": "Vary observed finite parameters before committing a compatible form or view change.",
+      "browser.scroll": "Reveal lazy-loaded or progressive resources that may be cached.",
+      "browser.screenshot": "Preserve a visible representation of content associated with generated cache activity.",
+      "browser.close": "Close the browser after activity so pending cache data is flushed for collection."
+    },
+    "forbidden_actions": [],
+    "support_actions": [
+      "browser.launch"
+    ],
+    "trigger_actions": [
+      "browser.smart_type",
+      "browser.close"
+    ],
+    "required_artifacts": [
+      "chromium.cache.cache_data"
+    ],
+    "completion": {
+      "type": "required_artifacts_present",
+      "detail": "Complete only after Chrome has been closed and the collected profile contains the chromium.cache.cache_data artifact."
+    }
+  }
+}

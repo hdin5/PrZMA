@@ -1,0 +1,4 @@
+Synthetic triage notes
+- Review activity associated with example.org.
+- Confirm whether 192.0.2.10 appears in collected records.
+- This is a training-only placeholder.

@@ -1,0 +1,190 @@
+{
+    "schema_version":  "1.0.0",
+    "purpose":  "tool_testing",
+    "run_full_trigger":  false,
+    "full_trigger_base_url":  null,
+    "agents":  {
+                   "A1":  {
+                              "display_name":  "Agent A1",
+                              "persona":  "You are a tool-testing bot (primary executor) validating the forensic tool \u0027ChromeCacheView\u0027 (version: 2.52).\nYour only goal is to generate the required forensic artifacts so the tool can be tested.\n\nOperating rules:\n- Prioritize executing required_actions that lead to required_artifacts.\n- Keep actions minimal and directly tied to artifact generation.\n- Avoid irrelevant chat; only communicate if an action requires it (e.g., *.send_message).\n- Never perform forbidden_actions.\n\nArtifact-first execution rules:\n- Choose actions to intentionally generate the required_artifacts (not merely to follow required_actions).\n- Interpret required_actions as allowed primitives; you still must pick parameters that cause artifact creation.\nNavigation validity rules (browser.goto):\n- Choose a URL that is likely reachable and returns a normal page.\n- After execution, check success (ok=true). If ok=false, switch to a different URL rather than retrying.\n- Prefer URLs that match the artifact goal implied by required_artifacts.\nAction intent guidance (derived from tool plan):\n- Action Flow: Launch Chrome using the intended profile, then use browser.goto with relevant run-provided runtime resources. Prefer pages that naturally load documents plus embedded media, scripts, styles, or dynamically requested content. On each page, use browser.get_clickables before interaction. Use browser.smart_type only in visible search or form fields, then use browser.click, browser.smart_click, and browser.select_option only on observed controls when they load distinct content. Use browser.scroll to reveal lazy or progressive resources, then re-observe with browser.get_clickables and perform a bounded additional visible interaction where relevant. Capture browser.screenshot after meaningful loaded states. Visit a few distinct available runtime pages or content states, then browser.close to flush cache writes. These document loads, embedded-resource loads, parameterized responses, navigation transitions, option changes, and lazy-loaded resources are the activity expected to populate chromium.cache.cache_data. Reason guidance: write context-specific reasons describing the actual page state and cache effect, such as loading a resource-rich page, submitting a visible query for\nReason-writing rules:\n- Write one short sentence that links (artifact goal) + (intent) + (expected effect).\n- Avoid repeating the exact same reason text across steps.\n\nPlan context:\n- required_actions: browser.launch, browser.goto, browser.get_clickables, browser.smart_type, browser.click, browser.smart_click, browser.select_option, browser.scroll, browser.screenshot, browser.close\n- forbidden_actions: (none)\n- required_artifacts: chromium.cache.cache_data\n",
+                              "platforms":  {
+
+                                            },
+                              "browser":  {
+                                              "engine":  "chromium",
+                                              "channel":  "chrome",
+                                              "headless":  false,
+                                              "user_data_dir":  "runtime_profiles/campaign_20260719T041323Z/campaign_20260719T041323Z_09",
+                                              "profile_name":  "Default",
+                                              "require_fresh_profile":  true,
+                                              "locale":  "en-US",
+                                              "timezone":  "UTC",
+                                              "extra_args":  [
+                                                                 "--host-resolver-rules=MAP research-archive.test 192.168.253.1",
+                                                                 "--no-proxy-server",
+                                                                 "--disable-background-networking"
+                                                             ]
+                                          }
+                          }
+               },
+    "rendezvous":  {
+                       "platform":  ""
+                   },
+    "scenario":  {
+                     "objective":  "Generate and preserve representative Chromium HTTP cache content that ChromeCacheView can list, inspect, export, and copy.",
+                     "notes":  {
+                                   "tool":  {
+                                                "name":  "ChromeCacheView",
+                                                "version":  "2.52"
+                                            },
+                                   "run_id":  "campaign_20260719T041323Z_09"
+                               }
+                 },
+    "run_limits":  {
+                       "max_actions_total":  100,
+                       "max_minutes":  30
+                   },
+    "global_prompt":  {
+                          "interaction_style":  [
+                                                    "TOOL-TESTING MODE: prioritize generating required artifacts over conversation.",
+                                                    "Be concise; do not roleplay an investigation case.",
+                                                    "Only communicate if a required action needs it (e.g., *.send_message).",
+                                                    "When logging reasons, state which artifact the action is meant to generate."
+                                                ],
+                          "hard_constraints":  [
+                                                   "Do not execute forbidden actions.",
+                                                   {
+                                                       "forbidden_actions":  [
+
+                                                                             ]
+                                                   },
+                                                   {
+                                                       "forbidden_action_reasons":  {
+
+                                                                                    }
+                                                   }
+                                               ],
+                          "completion_criteria":  [
+                                                      {
+                                                          "type":  "required_artifacts_present",
+                                                          "detail":  "Complete only after Chrome has been closed and Chromium HTTP cache data is present in the launched profile for collection by ChromeCacheView."
+                                                      }
+                                                  ]
+                      },
+    "vm_boot":  {
+                    "enabled":  false,
+                    "provider":  "vmware",
+                    "gui":  true,
+                    "vmrun_path":  "C:\\Program Files (x86)\\VMware\\VMware Workstation\\vmrun.exe",
+                    "vmx_paths":  {
+                                      "A1":  "C:\\path\\to\\Agent1.vmx"
+                                  },
+                    "vm_password_env":  "VM_PASSWORD",
+                    "wait_timeout_sec":  240,
+                    "poll_interval_sec":  2.0
+                },
+    "discovery":  {
+                      "rpyc_port":  18861,
+                      "subnet":  "192.168.253.0/24"
+                  },
+    "snapshot":  {
+                     "time_trigger":  {
+                                          "enabled":  false,
+                                          "interval":  "00:10",
+                                          "cooldown_sec":  0
+                                      },
+                     "event_trigger":  {
+                                           "enabled":  true,
+                                           "on_actions":  [
+                                                              "browser.close"
+                                                          ],
+                                           "cooldown_sec":  0,
+                                           "conditions":  [
+                                                              {
+                                                                  "left":  "agent_id",
+                                                                  "op":  "eq",
+                                                                  "right":  "A1"
+                                                              },
+                                                              {
+                                                                  "left":  "result.ok",
+                                                                  "op":  "eq",
+                                                                  "right":  true
+                                                              }
+                                                          ]
+                                       },
+                     "collection_plan":  {
+                                             "agent_id":  "A1",
+                                             "artifacts":  [
+                                                               "chromium.cache.cache_data"
+                                                           ],
+                                             "limits":  {
+                                                            "max_file_mb":  400,
+                                                            "max_total_mb":  2048
+                                                        },
+                                             "options":  {
+                                                             "browser":  "chrome",
+                                                             "profile":  "Default"
+                                                         }
+                                         }
+                 },
+    "available_resources":  {
+                                "web_url":  "http://research-archive.test:8765/start?run_id=campaign_20260719T041323Z_09"
+                            },
+    "tool_validation":  {
+                            "required_actions":  [
+                                                     "browser.launch",
+                                                     "browser.goto",
+                                                     "browser.get_clickables",
+                                                     "browser.smart_type",
+                                                     "browser.click",
+                                                     "browser.smart_click",
+                                                     "browser.select_option",
+                                                     "browser.scroll",
+                                                     "browser.screenshot",
+                                                     "browser.close"
+                                                 ],
+                            "required_action_intents":  {
+                                                            "browser.launch":  "Launch Chrome with a known Chromium profile so HTTP cache data is written to a collectable profile location.",
+                                                            "browser.goto":  "Load runtime-provided pages that return documents and embedded resources suitable for Chromium HTTP caching.",
+                                                            "browser.get_clickables":  "Observe currently visible controls before performing content-changing interactions that can request additional cacheable resources.",
+                                                            "browser.smart_type":  "Submit realistic visible search or form input to request parameter-dependent content and corresponding cache responses.",
+                                                            "browser.click":  "Activate an observed visible control when it produces a document transition or requests additional page resources.",
+                                                            "browser.smart_click":  "Follow visible links or results to load materially different cacheable documents and resources.",
+                                                            "browser.select_option":  "Change an observed finite page option when it requests distinct cacheable content.",
+                                                            "browser.scroll":  "Reveal progressive or lazy-loaded page resources that can add Chromium HTTP cache entries.",
+                                                            "browser.screenshot":  "Preserve a visible record of loaded content associated with the generated cache state.",
+                                                            "browser.close":  "Close Chrome so pending Chromium cache data can be flushed before artifact collection."
+                                                        },
+                            "forbidden_actions":  [
+
+                                                  ],
+                            "support_actions":  [
+                                                    "browser.launch"
+                                                ],
+                            "trigger_actions":  [
+                                                    "browser.close"
+                                                ],
+                            "required_artifacts":  [
+                                                       "chromium.cache.cache_data"
+                                                   ],
+                            "completion":  {
+                                               "type":  "required_artifacts_present",
+                                               "detail":  "Complete only after Chrome has been closed and Chromium HTTP cache data is present in the launched profile for collection by ChromeCacheView."
+                                           }
+                        },
+    "evaluation":  {
+                       "mode":  "autonomous_cache_recovery",
+                       "allowed_origins":  [
+                                               "http://research-archive.test:8765"
+                                           ],
+                       "max_validation_repairs":  5,
+                       "snapshot_trigger_adapter":  {
+                                                        "source_trigger_actions":  [
+                                                                                       "browser.close"
+                                                                                   ],
+                                                        "added_system_trigger":  "browser.close",
+                                                        "reason":  "collect the stable post-cleanup browser profile after cache flush",
+                                                        "agent_action_contract_changed":  false
+                                                    }
+                   }
+}

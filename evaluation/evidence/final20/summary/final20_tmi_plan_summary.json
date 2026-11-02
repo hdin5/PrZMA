@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "run_count": 20,
+  "raw_required_action_set": {
+    "unique_sets": 7,
+    "modal_run_count": 7,
+    "stability": 0.35,
+    "sets": [
+      {
+        "count": 7,
+        "signature": "browser.click|browser.close|browser.get_clickables|browser.goto|browser.launch|browser.screenshot|browser.scroll|browser.select_option|browser.smart_type"
+      },
+      {
+        "count": 5,
+        "signature": "browser.click|browser.close|browser.get_clickables|browser.goto|browser.launch|browser.screenshot|browser.scroll|browser.select_option|browser.smart_click|browser.smart_type"
+      },
+      {
+        "count": 2,
+        "signature": "browser.close|browser.get_clickables|browser.goto|browser.launch|browser.scroll|browser.select_option|browser.smart_click|browser.smart_type"
+      },
+      {
+        "count": 2,
+        "signature": "browser.close|browser.get_clickables|browser.goto|browser.launch|browser.screenshot|browser.scroll|browser.select_option|browser.smart_click|browser.smart_type"
+      },
+      {
+        "count": 2,
+        "signature": "browser.close|browser.get_clickables|browser.goto|browser.launch|browser.screenshot|browser.scroll|browser.smart_click|browser.smart_type"
+      },
+      {
+        "count": 1,
+        "signature": "browser.click|browser.close|browser.get_clickables|browser.goto|browser.launch|browser.screenshot|browser.scroll|browser.smart_type"
+      },
+      {
+        "count": 1,
+        "signature": "browser.click|browser.close|browser.get_clickables|browser.goto|browser.launch|browser.scroll|browser.select_option|browser.smart_click|browser.smart_type"
+      }
+    ]
+  },
+  "full_plan": {
+    "unique_signatures": 11,
+    "modal_run_count": 5,
+    "stability": 0.25
+  },
+  "action_selection_frequency_runs": {
+    "browser.click": 14,
+    "browser.close": 20,
+    "browser.get_clickables": 20,
+    "browser.goto": 20,
+    "browser.launch": 20,
+    "browser.screenshot": 17,
+    "browser.scroll": 20,
+    "browser.select_option": 17,
+    "browser.smart_click": 12,
+    "browser.smart_type": 20
+  },
+  "required_artifact_exact_match_runs": 19,
+  "trigger_exact_match_runs": 19,
+  "completion_exact_match_runs": 18
+}

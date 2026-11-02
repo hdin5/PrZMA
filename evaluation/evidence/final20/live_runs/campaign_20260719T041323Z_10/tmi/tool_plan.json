@@ -1,0 +1,65 @@
+{
+  "tool_plan": {
+    "tool": {
+      "name": "ChromeCacheView",
+      "version": "2.52"
+    },
+    "objective": "Generate and preserve representative Chromium browser-cache entries for ChromeCacheView to read, inspect, export, or extract.",
+    "required_actions": [
+      {
+        "name": "browser.launch",
+        "why": "Initialize Chromium-compatible browser profiles that can generate persistent cache entries."
+      },
+      {
+        "name": "browser.goto",
+        "why": "Load distinct documents and network resources into the browser cache."
+      },
+      {
+        "name": "browser.get_clickables",
+        "why": "Observe available controls before exercising visible page behavior."
+      },
+      {
+        "name": "browser.click",
+        "why": "Exercise observed links or controls that request additional cacheable resources."
+      },
+      {
+        "name": "browser.smart_type",
+        "why": "Submit realistic search or form input that can produce parameterized cached responses."
+      },
+      {
+        "name": "browser.select_option",
+        "why": "Change observed finite page parameters that may request materially different content."
+      },
+      {
+        "name": "browser.scroll",
+        "why": "Reveal lazy-loaded content and associated cacheable resources."
+      },
+      {
+        "name": "browser.screenshot",
+        "why": "Preserve a visible representation of the browsed content associated with cache generation."
+      },
+      {
+        "name": "browser.close",
+        "why": "Close browser sessions so pending cache writes can be flushed to their profiles."
+      }
+    ],
+    "forbidden_actions": [],
+    "required_artifacts": [
+      "chromium.cache.cache_data",
+      "edge.cache.cache_data"
+    ],
+    "trigger_actions": [
+      "browser.close"
+    ],
+    "completion": {
+      "type": "required_artifacts_present",
+      "detail": "Complete only after cache data is present in both the Chromium and Edge browser-profile cache locations following browser closure."
+    },
+    "action_intent_guidance": "Action Flow: Launch a Chromium-compatible browser profile and use run-provided runtime targets with browser.goto to load a few varied, content-rich pages that naturally request documents, images, scripts, styles, and other cacheable resources. On each page, use browser.get_clickables before interaction; use browser.click only on observed visible controls or links likely to load additional content. Where visible search or form fields are available, use browser.smart_type to submit realistic input; where visible finite choices are available, use browser.select_option to request a different page variant. Use browser.scroll to reveal lazy-loaded visible content, then re-observe with browser.get_clickables before any further bounded interaction. Capture browser.screenshot for representative loaded states. Repeat the same artifact-generating flow in an Edge profile so both chromium.cache.cache_data and edge.cache.cache_data are created, then use browser.close for each session to flush cache writes. Reason guidance: record context-specific reasons describing the current page and cache effect, such as loading a resource-heavy page, following an observed content link, revealing lazy-loaded ",
+    "_provenance": {
+      "model": "gpt-5.6-terra",
+      "notes": "3-stage TMI: IR -> bounded mapping -> tool_plan (leaf artifact keys only; with JSON repairs)",
+      "platform": "windows"
+    }
+  }
+}

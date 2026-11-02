@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "campaign_20260719T041323Z_06",
+  "finished_at": "2026-07-19T04:34:47.055256+00:00",
+  "purpose": "tool_testing",
+  "actions_total": 50,
+  "max_actions_total": 100,
+  "minutes_elapsed": 2,
+  "max_minutes": 30,
+  "agent_done": {
+    "A1": true
+  },
+  "agent_completed": {
+    "A1": true
+  },
+  "agent_failures": {},
+  "evaluation_mode": "autonomous_cache_recovery",
+  "autonomous_action_count": 50,
+  "autonomous_completion": true,
+  "stop_reason": "all_agents_done"
+}

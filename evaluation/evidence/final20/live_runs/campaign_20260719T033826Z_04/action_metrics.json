@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0.0",
+  "required_actions": [
+    "browser.click",
+    "browser.close",
+    "browser.get_clickables",
+    "browser.goto",
+    "browser.launch",
+    "browser.screenshot",
+    "browser.scroll",
+    "browser.select_option",
+    "browser.smart_type"
+  ],
+  "successful_required_actions": [
+    "browser.click",
+    "browser.close",
+    "browser.get_clickables",
+    "browser.goto",
+    "browser.launch",
+    "browser.screenshot",
+    "browser.scroll",
+    "browser.select_option",
+    "browser.smart_type"
+  ],
+  "required_action_coverage": 1.0,
+  "action_event_count": 46,
+  "action_success_rate": 0.9782608695652174,
+  "vm_execution_count": 46,
+  "vm_execution_success_rate": 0.9782608695652174,
+  "proposed_action_count": 45,
+  "rejected_action_count": 1,
+  "rejected_action_rate": 0.022222222222222223,
+  "internal_event_count": 0,
+  "unexpected_action_count": 0,
+  "unexpected_action_rate": 0.0,
+  "forbidden_action_violations": 0,
+  "sequence_conformant": true,
+  "origins": {
+    "agent": 44,
+    "system_bootstrap": 1,
+    "system_cleanup": 1
+  },
+  "proposal_origins": {
+    "agent": 45
+  },
+  "by_type": {
+    "browser.click": {
+      "proposed": 12,
+      "rejected": 0,
+      "events": 12,
+      "successful": 11
+    },
+    "browser.close": {
+      "events": 1,
+      "successful": 1
+    },
+    "browser.get_clickables": {
+      "proposed": 15,
+      "rejected": 0,
+      "events": 15,
+      "successful": 15
+    },
+    "browser.goto": {
+      "proposed": 4,
+      "rejected": 0,
+      "events": 4,
+      "successful": 4
+    },
+    "browser.launch": {
+      "events": 1,
+      "successful": 1
+    },
+    "browser.screenshot": {
+      "proposed": 2,
+      "rejected": 0,
+      "events": 2,
+      "successful": 2
+    },
+    "browser.scroll": {
+      "proposed": 9,
+      "rejected": 0,
+      "events": 8,
+      "successful": 8
+    },
+    "browser.select_option": {
+      "proposed": 2,
+      "rejected": 0,
+      "events": 2,
+      "successful": 2
+    },
+    "browser.smart_type": {
+      "proposed": 1,
+      "rejected": 0,
+      "events": 1,
+      "successful": 1
+    }
+  },
+  "autonomous_proposed_action_count": 45,
+  "autonomous_executed_action_count": 44,
+  "autonomous_action_success_rate": 0.9772727272727273,
+  "system_execution_count": 2,
+  "validation_intervention_count": 1,
+  "validation_intervention_rate": 0.022222222222222223,
+  "distinct_autonomous_action_types": [
+    "browser.click",
+    "browser.get_clickables",
+    "browser.goto",
+    "browser.screenshot",
+    "browser.scroll",
+    "browser.select_option",
+    "browser.smart_type"
+  ],
+  "distinct_proposed_parameter_variants": 27,
+  "capability_provenance": {
+    "tmi_required": {
+      "proposed": 45,
+      "executed": 44,
+      "action_types": [
+        "browser.click",
+        "browser.get_clickables",
+        "browser.goto",
+        "browser.screenshot",
+        "browser.scroll",
+        "browser.select_option",
+        "browser.smart_type"
+      ]
+    },
+    "framework_support": {
+      "proposed": 0,
+      "executed": 0,
+      "action_types": []
+    },
+    "system_bootstrap": {
+      "proposed": 0,
+      "executed": 1,
+      "action_types": [
+        "browser.launch"
+      ]
+    },
+    "system_cleanup": {
+      "proposed": 0,
+      "executed": 1,
+      "action_types": [
+        "browser.close"
+      ]
+    }
+  },
+  "covered_semantic_effect_keys": [
+    "content_open:observation",
+    "content_open:report",
+    "document_navigation:collections",
+    "document_navigation:collections:index",
+    "document_navigation:datasets",
+    "document_navigation:map:index",
+    "document_navigation:reports",
+    "document_navigation:root",
+    "dynamic_request:collection",
+    "dynamic_request:preview",
+    "file_acquisition:csv",
+    "file_acquisition:json",
+    "file_acquisition:pdf",
+    "form_commit:filters",
+    "form_commit:search"
+  ],
+  "covered_semantic_effect_count": 15,
+  "executions_per_effect": 2.933333333333333,
+  "equivalent_repeat_count": 0,
+  "first_seen_interactive_target_count": 29,
+  "last_new_interactive_target_at": "2026-07-19T03:52:18.960500+00:00",
+  "actions_after_last_new_target": 3,
+  "duplicate_navigation_count": 0,
+  "longest_identical_signature_streak": 2,
+  "longest_identical_proposal_signature_streak": 2,
+  "longest_identical_executed_signature_streak": 1
+}

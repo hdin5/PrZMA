@@ -1,0 +1,19 @@
+.report-page { padding: 5rem 7vw 6rem; }
+.report-header { display: grid; grid-template-columns: 1.15fr .85fr; gap: 4rem; align-items: center; }
+.report-header h1 { color: var(--ink); font-size: clamp(3rem,5.7vw,5.6rem); letter-spacing: -.035em; }
+.report-header .lede { color: var(--muted); }
+.report-header img { width: 100%; min-height: 430px; object-fit: cover; border-radius: 16px; background: #dce6e7; box-shadow: var(--shadow); }
+.byline, .actions { display: flex; flex-wrap: wrap; gap: .8rem 1.3rem; margin-top: 1.6rem; }
+.byline { color: #66808e; font-size: .7rem; }
+.report-summary { display: grid; grid-template-columns: 1fr 280px; gap: 3rem; margin-top: 5rem; padding-top: 3rem; border-top: 1px solid var(--line); }
+.report-summary h2 { color: var(--ink); font-size: 2.4rem; }
+.report-summary p { color: var(--muted); }
+.report-summary dl { margin: 0; padding: 1.3rem; border-radius: 11px; background: var(--mist); }
+.report-summary dl div { padding: .7rem 0; border-bottom: 1px solid #dce4e6; }
+.report-summary dl div:last-child { border: 0; }
+.report-summary dt { color: #6d808c; font-size: .63rem; text-transform: uppercase; }
+.report-summary dd { margin: .2rem 0 0; color: #294b5c; font-weight: 720; }
+.pdf-shell { min-height: 680px; margin-top: 3rem; overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: #e8edef; }
+.pdf-shell iframe { width: 100%; height: 760px; border: 0; }
+@media (max-width: 880px) { .report-header, .report-summary { grid-template-columns: 1fr; } }
+@media (max-width: 640px) { .report-page { padding-inline: 1.25rem; } }

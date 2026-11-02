@@ -1,0 +1,143 @@
+{
+  "behaviors": [
+    {
+      "behavior_id": "discover.navigation.01",
+      "effect": "Open a discovery index",
+      "evidence_resource_ids": [
+        "discover.html.01",
+        "discover.css.01"
+      ],
+      "journey": "discover"
+    },
+    {
+      "behavior_id": "discover.navigation.02",
+      "effect": "Open one representative detail document",
+      "evidence_resource_ids": [
+        "discover.html.02",
+        "discover.css.01",
+        "discover.js.01"
+      ],
+      "journey": "discover"
+    },
+    {
+      "behavior_id": "discover.dynamic_request.01",
+      "effect": "Request structured metadata from a visible control",
+      "evidence_resource_ids": [
+        "discover.json.01"
+      ],
+      "journey": "discover"
+    },
+    {
+      "behavior_id": "discover.viewport_reveal.01",
+      "effect": "Reveal the complete progressive image set",
+      "evidence_resource_ids": [
+        "discover.webp.01",
+        "discover.jpeg.01",
+        "discover.png.01"
+      ],
+      "journey": "discover"
+    },
+    {
+      "behavior_id": "discover.embedded_open.01",
+      "effect": "Open and load an embedded interactive view",
+      "evidence_resource_ids": [
+        "discover.html.03",
+        "discover.css.02",
+        "discover.js.02",
+        "discover.json.02"
+      ],
+      "journey": "discover"
+    },
+    {
+      "behavior_id": "discover.navigation.03",
+      "effect": "Open an independent visual exploration document",
+      "evidence_resource_ids": [
+        "discover.html.04",
+        "discover.css.02"
+      ],
+      "journey": "discover"
+    },
+    {
+      "behavior_id": "inquiry.submit.01",
+      "effect": "Submit a non-empty inquiry",
+      "evidence_resource_ids": [
+        "inquiry.html.01",
+        "inquiry.css.01",
+        "inquiry.js.01"
+      ],
+      "journey": "inquiry"
+    },
+    {
+      "behavior_id": "inquiry.parameter_commit.01",
+      "effect": "Commit a non-default filter or ordering parameter",
+      "evidence_resource_ids": [
+        "inquiry.json.01"
+      ],
+      "journey": "inquiry"
+    },
+    {
+      "behavior_id": "retrieve.navigation.01",
+      "effect": "Open a document detail view",
+      "evidence_resource_ids": [
+        "retrieve.html.01",
+        "retrieve.css.01",
+        "retrieve.js.01",
+        "retrieve.jpeg.01"
+      ],
+      "journey": "retrieve"
+    },
+    {
+      "behavior_id": "retrieve.inline_open.01",
+      "effect": "Open an inline document representation",
+      "evidence_resource_ids": [
+        "retrieve.pdf.01"
+      ],
+      "journey": "retrieve"
+    },
+    {
+      "behavior_id": "retrieve.download.01",
+      "effect": "Acquire a supporting document",
+      "evidence_resource_ids": [
+        "retrieve.pdf.02"
+      ],
+      "journey": "retrieve"
+    },
+    {
+      "behavior_id": "retrieve.navigation.02",
+      "effect": "Open a structured-data detail view",
+      "evidence_resource_ids": [
+        "retrieve.html.02",
+        "retrieve.css.02",
+        "retrieve.js.02"
+      ],
+      "journey": "retrieve"
+    },
+    {
+      "behavior_id": "retrieve.parameter_request.01",
+      "effect": "Request a parameterized structured preview",
+      "evidence_resource_ids": [
+        "retrieve.json.01"
+      ],
+      "journey": "retrieve"
+    },
+    {
+      "behavior_id": "retrieve.download.02",
+      "effect": "Acquire a tabular representation",
+      "evidence_resource_ids": [
+        "retrieve.csv.01"
+      ],
+      "journey": "retrieve"
+    },
+    {
+      "behavior_id": "retrieve.download.03",
+      "effect": "Acquire a structured representation",
+      "evidence_resource_ids": [
+        "retrieve.json.02"
+      ],
+      "journey": "retrieve"
+    }
+  ],
+  "schema_version": 2,
+  "site_id": "research-archive",
+  "site_version": "2026-07-18"
+}

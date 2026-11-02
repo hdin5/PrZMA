@@ -1,0 +1,68 @@
+{
+  "tool_plan": {
+    "tool": {
+      "name": "ChromeCacheView",
+      "version": "2.52"
+    },
+    "objective": "Generate and preserve representative Chromium HTTP cache content that ChromeCacheView can list, inspect, export, and copy.",
+    "required_actions": [
+      {
+        "name": "browser.launch",
+        "why": "Launch Chrome with a known Chromium profile so HTTP cache data is written to a collectable profile location."
+      },
+      {
+        "name": "browser.goto",
+        "why": "Load runtime-provided pages that return documents and embedded resources suitable for Chromium HTTP caching."
+      },
+      {
+        "name": "browser.get_clickables",
+        "why": "Observe currently visible controls before performing content-changing interactions that can request additional cacheable resources."
+      },
+      {
+        "name": "browser.smart_type",
+        "why": "Submit realistic visible search or form input to request parameter-dependent content and corresponding cache responses."
+      },
+      {
+        "name": "browser.click",
+        "why": "Activate an observed visible control when it produces a document transition or requests additional page resources."
+      },
+      {
+        "name": "browser.smart_click",
+        "why": "Follow visible links or results to load materially different cacheable documents and resources."
+      },
+      {
+        "name": "browser.select_option",
+        "why": "Change an observed finite page option when it requests distinct cacheable content."
+      },
+      {
+        "name": "browser.scroll",
+        "why": "Reveal progressive or lazy-loaded page resources that can add Chromium HTTP cache entries."
+      },
+      {
+        "name": "browser.screenshot",
+        "why": "Preserve a visible record of loaded content associated with the generated cache state."
+      },
+      {
+        "name": "browser.close",
+        "why": "Close Chrome so pending Chromium cache data can be flushed before artifact collection."
+      }
+    ],
+    "forbidden_actions": [],
+    "required_artifacts": [
+      "chromium.cache.cache_data"
+    ],
+    "trigger_actions": [
+      "browser.close"
+    ],
+    "completion": {
+      "type": "required_artifacts_present",
+      "detail": "Complete only after Chrome has been closed and Chromium HTTP cache data is present in the launched profile for collection by ChromeCacheView."
+    },
+    "action_intent_guidance": "Action Flow: Launch Chrome using the intended profile, then use browser.goto with relevant run-provided runtime resources. Prefer pages that naturally load documents plus embedded media, scripts, styles, or dynamically requested content. On each page, use browser.get_clickables before interaction. Use browser.smart_type only in visible search or form fields, then use browser.click, browser.smart_click, and browser.select_option only on observed controls when they load distinct content. Use browser.scroll to reveal lazy or progressive resources, then re-observe with browser.get_clickables and perform a bounded additional visible interaction where relevant. Capture browser.screenshot after meaningful loaded states. Visit a few distinct available runtime pages or content states, then browser.close to flush cache writes. These document loads, embedded-resource loads, parameterized responses, navigation transitions, option changes, and lazy-loaded resources are the activity expected to populate chromium.cache.cache_data. Reason guidance: write context-specific reasons describing the actual page state and cache effect, such as loading a resource-rich page, submitting a visible query for ",
+    "_provenance": {
+      "model": "gpt-5.6-terra",
+      "notes": "3-stage TMI: IR -> bounded mapping -> tool_plan (leaf artifact keys only; with JSON repairs)",
+      "platform": "windows"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "tool_plan": {
+    "tool": {
+      "name": "ChromeCacheView",
+      "version": "2.52"
+    },
+    "objective": "Generate and preserve representative Chromium web-cache content for ChromeCacheView inspection, including cacheable document and resource responses.",
+    "required_actions": [
+      {
+        "name": "browser.launch",
+        "why": "Creates the Chromium session and profile that contains the cache source."
+      },
+      {
+        "name": "browser.get_clickables",
+        "why": "Observes available controls and finite options before exercising cache-generating interactions."
+      },
+      {
+        "name": "browser.goto",
+        "why": "Loads distinct web documents and their cacheable network resources."
+      },
+      {
+        "name": "browser.smart_type",
+        "why": "Supplies a realistic query and can commit a search-driven document transition."
+      },
+      {
+        "name": "browser.smart_click",
+        "why": "Exercises visible links or results that load materially different cached content."
+      },
+      {
+        "name": "browser.select_option",
+        "why": "Varies observed finite page parameters when they can produce different responses."
+      },
+      {
+        "name": "browser.scroll",
+        "why": "Reveals lazy-loaded content and associated cacheable resources."
+      },
+      {
+        "name": "browser.close",
+        "why": "Closes the session after interaction so pending browser cache data can be flushed."
+      }
+    ],
+    "forbidden_actions": [],
+    "required_artifacts": [
+      "chromium.cache.cache_data"
+    ],
+    "trigger_actions": [
+      "browser.close"
+    ],
+    "completion": {
+      "type": "min_required_actions",
+      "detail": "Complete after all required actions have been performed in a live Chromium session, including browser.close to flush the cache."
+    },
+    "action_intent_guidance": "Action Flow: Launch Chromium, then use browser.goto with relevant run-provided runtime resources to load a few distinct, naturally resource-rich pages that visibly acquire cacheable documents, images, scripts, styles, and media. On each suitable page, use browser.get_clickables to inspect currently visible controls and finite choices. Use browser.smart_type where a visible search or text-entry workflow supports a realistic query and transition to a different document, then use browser.smart_click on visible results or links that lead to materially different content. Where observed finite options can change the response, use browser.select_option. Use browser.scroll to reveal lazy-loaded page content and resources, then re-run browser.get_clickables after revealed content when useful; keep this observe -> reveal -> re-observe loop bounded. Close the browser only after these interactions so cache data is flushed for inspection. Artifact focus: page navigations generate cached document and supporting-resource responses; search, link transitions, option changes, and lazy loading broaden the Chromium cache content. Reason guidance: write context-specific reasons that identify the observ",
+    "_provenance": {
+      "model": "gpt-5.6-terra",
+      "notes": "3-stage TMI: IR -> bounded mapping -> tool_plan (leaf artifact keys only; with JSON repairs)",
+      "platform": "windows"
+    }
+  }
+}

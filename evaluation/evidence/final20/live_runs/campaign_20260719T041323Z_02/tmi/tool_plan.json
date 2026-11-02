@@ -1,0 +1,64 @@
+{
+  "tool_plan": {
+    "tool": {
+      "name": "ChromeCacheView",
+      "version": "2.52"
+    },
+    "objective": "Generate and preserve representative Chrome cache content for ChromeCacheView to read, view, and export.",
+    "required_actions": [
+      {
+        "name": "browser.launch",
+        "why": "Starts a Chrome-backed browsing session that can create Chrome cache entries."
+      },
+      {
+        "name": "browser.goto",
+        "why": "Loads distinct documents and network resources into the Chrome cache."
+      },
+      {
+        "name": "browser.get_clickables",
+        "why": "Observes available page controls before exercising cache-relevant interactions."
+      },
+      {
+        "name": "browser.click",
+        "why": "Activates observed controls that can load additional cached resources."
+      },
+      {
+        "name": "browser.smart_type",
+        "why": "Creates search or form-driven requests with distinct cached responses."
+      },
+      {
+        "name": "browser.select_option",
+        "why": "Changes observed finite page parameters that can produce different cached content."
+      },
+      {
+        "name": "browser.scroll",
+        "why": "Reveals lazy-loaded content and associated cacheable resources."
+      },
+      {
+        "name": "browser.screenshot",
+        "why": "Preserves a visible-state representation alongside generated cache content."
+      },
+      {
+        "name": "browser.close",
+        "why": "Closes the session after browsing so pending cache writes can be finalized."
+      }
+    ],
+    "forbidden_actions": [],
+    "required_artifacts": [
+      "chromium.cache.cache_data"
+    ],
+    "trigger_actions": [
+      "browser.close"
+    ],
+    "completion": {
+      "type": "required_artifacts_present",
+      "detail": "Complete after Chrome cache data is present following the browsing sequence and browser closure, which finalizes pending cache writes."
+    },
+    "action_intent_guidance": "Action Flow: Launch the Chrome-backed session, then use browser.goto with relevant run-provided runtime resources when available. Visit a few distinct, naturally resource-rich pages so documents, images, scripts, styles, media, and other responses can populate Chromium cache data. On each suitable page, use browser.get_clickables before interaction; click observed controls that visibly load additional content. Where visible search or form inputs are available, use browser.smart_type to issue context-appropriate requests, and use browser.select_option only for observed finite choices that change displayed content. Use browser.scroll to reveal lazy-loaded material; after scrolling or other state-changing interactions, re-run browser.get_clickables and perform a bounded observe -> reveal -> re-observe loop where newly visible controls can load further resources. Capture browser.screenshot on representative loaded states. Close the browser only after the browsing activity is complete so cache writes are preserved. Artifact focus: navigation and visible content interactions should generate chromium.cache.cache_data through cached page documents and supporting network resources. Reason g",
+    "_provenance": {
+      "model": "gpt-5.6-terra",
+      "notes": "3-stage TMI: IR -> bounded mapping -> tool_plan (leaf artifact keys only; with JSON repairs)",
+      "platform": "windows"
+    }
+  }
+}

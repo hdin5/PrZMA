@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "method": "run-level nonparametric percentile bootstrap",
+  "resamples": 100000,
+  "run_count": 20,
+  "seed_basis": "e1d7ab3b6984952e79d6b44497b4f7ae96267bdf3e00cfe797a860202d7866d5",
+  "family_coverage": {
+    "mean": 0.9982758620689655,
+    "ci95": [
+      0.9948275862068966,
+      1.0
+    ]
+  },
+  "behavior_coverage": {
+    "mean": 0.9966666666666667,
+    "ci95": [
+      0.99,
+      1.0
+    ]
+  }
+}
