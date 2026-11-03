@@ -611,9 +611,12 @@ See [`End to End Samples/README.md`](End%20to%20End%20Samples/README.md) for det
 
 ## License and Citation
 
-The license for this research artifact is not specified yet. Before public
-release, add a repository-level `LICENSE` file that matches the intended
-distribution policy.
+The PrZMA source code and accompanying documentation are licensed under the
+Apache License, Version 2.0. See [`LICENSE`](LICENSE) for the full terms.
 
-If you use PrZMA in academic work, please cite the paper and/or the software
-citation metadata in [`CITATION.cff`](CITATION.cff).
+This license does not relicense third-party software, web content, or other
+materials included in the forensic samples; their respective rights and
+licensing terms remain applicable.
+
+If you use PrZMA in academic work, please cite the software using the metadata
+in [`CITATION.cff`](CITATION.cff).
